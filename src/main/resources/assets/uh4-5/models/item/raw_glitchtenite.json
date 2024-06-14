@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "uh4-5:item/raw_glitchtenite"
+  }
+}
