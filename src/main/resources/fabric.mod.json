@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "uh4-5",
+	"version": "${version}",
+	"name": "UH4 1-5",
+	"description": "Mod usado del día 1 al 5 de UH4.",
+	"authors": [
+		"Kosha",
+		"Pavlo",
+		"Christiancito",
+		"Tetera"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/uh4-5/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.kosha.uh45.UH415"
+		],
+		"client": [
+			"net.kosha.uh45.UH415Client"
+		],
+		"fabric-datagen": [
+			"net.kosha.uh45.UH415DataGenerator"
+		]
+	},
+	"mixins": [
+		"uh4-5.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
