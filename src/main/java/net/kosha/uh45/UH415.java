@@ -2,6 +2,7 @@ package net.kosha.uh45;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.kosha.uh45.block.ModBlocks;
 import net.kosha.uh45.item.ModItemGroups;
 import net.kosha.uh45.item.ModItems;
 import org.slf4j.Logger;
@@ -14,6 +15,8 @@ public class UH415 implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

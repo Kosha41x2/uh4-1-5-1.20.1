@@ -2,6 +2,7 @@ package net.kosha.uh45.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.kosha.uh45.UH415;
+import net.kosha.uh45.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -16,6 +17,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.GLITCHTENITE_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_GLITCHTENITE);
                         entries.add(ModItems.GLITCHTENITE_INGOT);
+                        entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
 
                     }).build());
 
