@@ -17,6 +17,6 @@ public class ModItems {
     }
 
     public static void registerModItems(){
-        UH415.LOGGER.info("Registering Mod Items for" + UH415.MOD_ID);
+        UH415.LOGGER.info("Registering Mod Items for " + UH415.MOD_ID);
     }
 }

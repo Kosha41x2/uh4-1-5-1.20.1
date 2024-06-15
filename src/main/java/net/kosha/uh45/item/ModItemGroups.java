@@ -25,7 +25,7 @@ public class ModItemGroups {
                     }).build());
 
     public static void registerItemGroups(){
-        UH415.LOGGER.info("Registering Item Groups for" + UH415.MOD_ID);
+        UH415.LOGGER.info("Registering Item Groups for " + UH415.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItemGroups::addItemsToTabIngredients);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItemGroups::addBlocksToTabBlocks);
