@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_GLITCHTENITE);
                         entries.add(ModItems.GLITCHTENITE_INGOT);
                         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
+                        entries.add(ModBlocks.GLITCHTENITE_BLOCK);
 
                     }).build());
 
@@ -36,6 +37,7 @@ public class ModItemGroups {
     //Add these to the building blocks group
     private static void addBlocksToTabBlocks(FabricItemGroupEntries entries){
         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
+        entries.add(ModBlocks.GLITCHTENITE_BLOCK);
     }
     //Add these to the ingredients group
     private static void addItemsToTabIngredients(FabricItemGroupEntries entries){

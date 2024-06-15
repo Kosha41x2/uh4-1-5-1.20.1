@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "uh4-5:block/glitchtenite_block"
+  }
+}
