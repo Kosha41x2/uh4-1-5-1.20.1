@@ -1,17 +1,13 @@
 package net.kosha.uh45.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kosha.uh45.UH415;
-import net.kosha.uh45.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -31,14 +27,7 @@ public class ModBlocks {
                 new BlockItem(block, new FabricItemSettings()));
     }
 
-    //Add these to the building blocks group
-    private static void addBlocksToTabBlocks(FabricItemGroupEntries entries){
-        entries.add(RAW_GLITCHTENITE_BLOCK);
-    }
-
     public static void registerModBlocks(){
         UH415.LOGGER.info("Registering ModBlocks for " + UH415.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModBlocks::addBlocksToTabBlocks);
     }
 }
