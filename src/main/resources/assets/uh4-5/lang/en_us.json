@@ -1,4 +1,6 @@
 {
   "item.uh4-5.raw_glitchtenite": "Raw glitchtenite",
-  "item.uh4-5.glitchtenite_ingot": "Glitchtenite ingot"
+  "item.uh4-5.glitchtenite_ingot": "Glitchtenite ingot",
+
+  "itemgroup.corrupted": "Corrupted"
 }

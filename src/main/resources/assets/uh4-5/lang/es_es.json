@@ -1,4 +1,6 @@
 {
   "item.uh4-5.raw_glitchtenite": "Glitchtenita cruda",
-  "item.uh4-5.glitchtenite_ingot": "Lingote de glitchtenita"
+  "item.uh4-5.glitchtenite_ingot": "Lingote de glitchtenita",
+
+  "itemgroup.corrupted": "Corrupto"
 }
