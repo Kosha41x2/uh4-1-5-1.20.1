@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "uh4-5:raw_glitchtenite"
+  },
+  "result": "uh4-5:glitchtenite_ingot"
+}

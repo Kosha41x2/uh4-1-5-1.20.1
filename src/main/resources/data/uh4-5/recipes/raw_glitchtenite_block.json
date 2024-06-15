@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "uh4-5:raw_glitchtenite"
+    }
+  },
+  "result": {
+    "item": "uh4-5:raw_glitchtenite_block"
+  }
+}

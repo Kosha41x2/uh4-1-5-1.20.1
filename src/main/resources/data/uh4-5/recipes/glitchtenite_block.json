@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "uh4-5:glitchtenite_ingot"
+    }
+  },
+  "result": {
+    "item": "uh4-5:glitchtenite_block"
+  }
+}

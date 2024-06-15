@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "uh4-5:raw_glitchtenite_block"
+    }
+  ],
+  "result":{
+    "item":"uh4-5:raw_glitchtenite",
+    "count": 9
+  }
+}
