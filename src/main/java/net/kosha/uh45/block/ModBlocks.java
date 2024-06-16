@@ -15,10 +15,10 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block RAW_GLITCHTENITE_BLOCK = registerBlock("raw_glitchtenite_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.RAW_GOLD_BLOCK).mapColor(MapColor.LAPIS_BLUE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.LAPIS_BLUE)));
 
     public static final Block GLITCHTENITE_BLOCK = registerBlock("glitchtenite_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).mapColor(MapColor.LAPIS_BLUE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.LAPIS_BLUE)));
 
 
     private static Block registerBlock(String name, Block block){
