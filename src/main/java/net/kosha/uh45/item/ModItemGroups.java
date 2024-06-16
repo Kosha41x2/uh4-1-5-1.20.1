@@ -22,6 +22,11 @@ public class ModItemGroups {
                         entries.add(ModItems.GLITCHTENITE_INGOT);
                         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
                         entries.add(ModBlocks.GLITCHTENITE_BLOCK);
+                        entries.add(ModItems.GLITCHTENITE_SWORD);
+                        entries.add(ModItems.GLITCHTENITE_AXE);
+                        entries.add(ModItems.GLITCHTENITE_PICKAXE);
+                        entries.add(ModItems.GLITCHTENITE_SHOVEL);
+                        entries.add(ModItems.GLITCHTENITE_HOE);
 
                     }).build());
 
@@ -30,6 +35,8 @@ public class ModItemGroups {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItemGroups::addItemsToTabIngredients);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItemGroups::addBlocksToTabBlocks);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItemGroups::addItemsToTabCombat);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItemGroups::addItemsToTabTools);
     }
 
     //Already existing groups
@@ -43,6 +50,19 @@ public class ModItemGroups {
     private static void addItemsToTabIngredients(FabricItemGroupEntries entries){
         entries.add(ModItems.RAW_GLITCHTENITE);
         entries.add(ModItems.GLITCHTENITE_INGOT);
+    }
+
+    private static void addItemsToTabCombat(FabricItemGroupEntries entries){
+        entries.add(ModItems.GLITCHTENITE_SWORD);
+        entries.add(ModItems.GLITCHTENITE_AXE);
+    }
+
+
+    private static void addItemsToTabTools(FabricItemGroupEntries entries){
+        entries.add(ModItems.GLITCHTENITE_PICKAXE);
+        entries.add(ModItems.GLITCHTENITE_AXE);
+        entries.add(ModItems.GLITCHTENITE_SHOVEL);
+        entries.add(ModItems.GLITCHTENITE_HOE);
     }
 
 }
