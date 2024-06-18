@@ -3,6 +3,7 @@ package net.kosha.uh45;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.kosha.uh45.datagen.*;
+import net.kosha.uh45.util.ModModelPredicateProvider;
 
 public class UH415DataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -13,6 +14,5 @@ public class UH415DataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLoodTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
-
 	}
 }

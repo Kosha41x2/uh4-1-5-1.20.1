@@ -57,7 +57,7 @@
                 "charged": 1,
                 "firework": 1
             },
-            "model": "item/crossbow_firework"
+            "model": "uh4-5:item/glitched_crossbow_firework"
         }
     ]
 }

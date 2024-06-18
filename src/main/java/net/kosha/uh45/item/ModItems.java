@@ -17,7 +17,8 @@ public class ModItems {
     public static final Item GLITCHTENITE_SHOVEL = registerItem("glitchtenite_shovel", new ShovelItem(ModToolMaterial.GLITCHTENITE,1, realAttackSpeed(1.0f),new FabricItemSettings()));
     public static final Item GLITCHTENITE_HOE = registerItem("glitchtenite_hoe", new HoeItem(ModToolMaterial.GLITCHTENITE,0, realAttackSpeed(1.0f),new FabricItemSettings()));
     public static final Item GLITCHTENITE_SWORD = registerItem("glitchtenite_sword", new SwordItem(ModToolMaterial.GLITCHTENITE,3, realAttackSpeed(1.6f),new FabricItemSettings()));
-    public static final Item GLITCHED_CROSSBOW = registerItem("glitched_crossbow", new GlitchedCrossbowItem(new FabricItemSettings().maxCount(1).maxDamage(687)));
+    public static final Item GLITCHED_CROSSBOW = registerItem("glitched_crossbow", (Item)new GlitchedCrossbowItem(new FabricItemSettings().maxCount(1).maxDamage(687)));
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(UH415.MOD_ID, name), item);
