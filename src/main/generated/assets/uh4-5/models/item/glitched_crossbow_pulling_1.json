@@ -1,0 +1,6 @@
+{
+    "parent": "uh4-5:item/glitched_crossbow",
+    "textures": {
+        "layer0": "uh4-5:item/glitched_crossbow_pulling_1"
+    }
+}

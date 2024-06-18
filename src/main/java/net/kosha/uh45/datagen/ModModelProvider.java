@@ -30,5 +30,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GLITCHTENITE_SHOVEL, Models.HANDHELD);
 
 
+
     }
 }

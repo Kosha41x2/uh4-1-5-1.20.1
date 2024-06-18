@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GLITCHTENITE_PICKAXE);
                         entries.add(ModItems.GLITCHTENITE_SHOVEL);
                         entries.add(ModItems.GLITCHTENITE_HOE);
+                        entries.add(ModItems.GLITCHED_CROSSBOW);
 
                     }).build());
 
@@ -55,6 +56,7 @@ public class ModItemGroups {
     private static void addItemsToTabCombat(FabricItemGroupEntries entries){
         entries.add(ModItems.GLITCHTENITE_SWORD);
         entries.add(ModItems.GLITCHTENITE_AXE);
+        entries.add(ModItems.GLITCHED_CROSSBOW);
     }
 
 
