@@ -22,7 +22,7 @@ import java.util.Random;
 public class GlitchedCrossbowItem extends CrossbowLikeItem {
     public GlitchedCrossbowItem(Settings settings){
         super(settings);
-        }
+    }
 
     Random random = new Random();
 
@@ -30,7 +30,9 @@ public class GlitchedCrossbowItem extends CrossbowLikeItem {
     public ItemStack projectileGetter(LivingEntity shooter, ItemStack crossbow) {
         ItemStack storeItemStack = shooter.getProjectileType(crossbow);
         if(storeItemStack.getItem().equals(Items.ARROW)){
-            storeItemStack.decrement(1);
+            if(!((PlayerEntity)shooter).getAbilities().creativeMode){
+                storeItemStack.decrement(1);
+            }
             storeItemStack =new ItemStack(Items.TIPPED_ARROW, 1);
             switch (random.nextInt(0,4))
             {

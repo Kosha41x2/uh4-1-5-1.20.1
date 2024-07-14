@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GLITCHTENITE_INGOT);
                         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
                         entries.add(ModBlocks.GLITCHTENITE_BLOCK);
+                        entries.add(ModBlocks.CORRUPTION_BLOCK);
                         entries.add(ModItems.GLITCHTENITE_SWORD);
                         entries.add(ModItems.GLITCHTENITE_AXE);
                         entries.add(ModItems.GLITCHTENITE_PICKAXE);
@@ -46,6 +47,7 @@ public class ModItemGroups {
     private static void addBlocksToTabBlocks(FabricItemGroupEntries entries){
         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
         entries.add(ModBlocks.GLITCHTENITE_BLOCK);
+        entries.add(ModBlocks.CORRUPTION_BLOCK);
     }
     //Add these to the ingredients group
     private static void addItemsToTabIngredients(FabricItemGroupEntries entries){

@@ -15,15 +15,15 @@ public enum ModToolMaterial implements ToolMaterial {
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
-    private final Supplier<Ingredient> repainIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
-    ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackSamage, int enchantability, Supplier<Ingredient> repainIngredient) {
+    ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
-        this.attackDamage = attackSamage;
+        this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        this.repainIngredient = repainIngredient;
+        this.repairIngredient = repairIngredient;
     }
 
 
@@ -54,6 +54,6 @@ public enum ModToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return this.repainIngredient.get();
+        return this.repairIngredient.get();
     }
 }

@@ -17,8 +17,11 @@ public class ModModelPredicateProvider {
             }
             return (float)(stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / (float)CrossbowLikeItem.getPullTime(stack);
         });
-        ModelPredicateProviderRegistry.register(ModItems.GLITCHED_CROSSBOW, new Identifier("pulling"), (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack && !CrossbowLikeItem.isCharged(stack) ? 1.0f : 0.0f);
-        ModelPredicateProviderRegistry.register(ModItems.GLITCHED_CROSSBOW, new Identifier("charged"), (stack, world, entity, seed) -> CrossbowLikeItem.isCharged(stack) ? 1.0f : 0.0f);
-        ModelPredicateProviderRegistry.register(ModItems.GLITCHED_CROSSBOW, new Identifier("firework"), (stack, world, entity, seed) -> CrossbowLikeItem.isCharged(stack) && CrossbowLikeItem.hasProjectile(stack, Items.FIREWORK_ROCKET) ? 1.0f : 0.0f);
+        ModelPredicateProviderRegistry.register(ModItems.GLITCHED_CROSSBOW, new Identifier("pulling"), (stack, world, entity, seed) ->
+                entity != null && entity.isUsingItem() && entity.getActiveItem() == stack && !CrossbowLikeItem.isCharged(stack) ? 1.0f : 0.0f);
+        ModelPredicateProviderRegistry.register(ModItems.GLITCHED_CROSSBOW, new Identifier("charged"), (stack, world, entity, seed) ->
+                CrossbowLikeItem.isCharged(stack) ? 1.0f : 0.0f);
+        ModelPredicateProviderRegistry.register(ModItems.GLITCHED_CROSSBOW, new Identifier("firework"), (stack, world, entity, seed) ->
+                CrossbowLikeItem.isCharged(stack) && CrossbowLikeItem.hasProjectile(stack, Items.FIREWORK_ROCKET) ? 1.0f : 0.0f);
     }
 }

@@ -1,6 +1,6 @@
 {
     "parent": "uh4-5:item/glitched_crossbow",
     "textures": {
-        "layer0": "item/crossbow_arrow"
+        "layer0": "uh4-5:item/glitched_crossbow_arrow"
     }
 }

@@ -3,6 +3,7 @@ package net.kosha.uh45.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kosha.uh45.UH415;
+import net.kosha.uh45.block.custom.CorruptionBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
@@ -19,6 +20,9 @@ public class ModBlocks {
 
     public static final Block GLITCHTENITE_BLOCK = registerBlock("glitchtenite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.LAPIS_BLUE)));
+
+    public static final Block CORRUPTION_BLOCK = registerBlock("corruption_block",
+            new CorruptionBlock(FabricBlockSettings.copyOf(Blocks.WARPED_WART_BLOCK).mapColor(MapColor.EMERALD_GREEN)));
 
 
     private static Block registerBlock(String name, Block block){

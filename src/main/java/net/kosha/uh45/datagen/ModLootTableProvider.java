@@ -4,8 +4,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.kosha.uh45.block.ModBlocks;
 
-public class ModLoodTableProvider extends FabricBlockLootTableProvider {
-    public ModLoodTableProvider(FabricDataOutput dataOutput) {
+public class ModLootTableProvider extends FabricBlockLootTableProvider {
+    public ModLootTableProvider(FabricDataOutput dataOutput) {
         super(dataOutput);
     }
 

@@ -21,6 +21,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_GLITCHTENITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GLITCHTENITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORRUPTION_BLOCK);
     }
 
     @Override

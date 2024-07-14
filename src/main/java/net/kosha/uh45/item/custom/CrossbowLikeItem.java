@@ -311,7 +311,7 @@ public class CrossbowLikeItem
 
     @Override
     public UseAction getUseAction(ItemStack stack) {
-        return UseAction.CROSSBOW;
+        return UseAction.BOW;
     }
 
     private SoundEvent getQuickChargeSound(int stage) {
@@ -367,4 +367,3 @@ public class CrossbowLikeItem
         return 8;
     }
 }
-

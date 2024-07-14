@@ -10,8 +10,11 @@
 
   "block.uh4-5.raw_glitchtenite_block": "Raw glitchtenite block",
   "block.uh4-5.glitchtenite_block": "Glitchtenite block",
+  "block.uh4-5.corruption_block": "Corruption block",
 
 
 
-  "itemgroup.corrupted": "Corrupted"
+  "itemgroup.corrupted": "Corrupted",
+
+  "death.attack.corruption": "%1$s died from corruption."
 }
