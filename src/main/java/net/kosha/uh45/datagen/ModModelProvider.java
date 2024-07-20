@@ -21,7 +21,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_GLITCHTENITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GLITCHTENITE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORRUPTION_BLOCK);
     }
 
     @Override
@@ -33,6 +32,5 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GLITCHTENITE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GLITCHTENITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GLITCHTENITE_SHOVEL, Models.HANDHELD);
-
     }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "uh4-5:block/corruption_block_off",
+    "top": "uh4-5:block/corruption_block_2",
+    "side": "uh4-5:block/corruption_block_off"
+  }
+}

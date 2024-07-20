@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "activated=0": {
+      "model": "uh4-5:block/corruption_block"
+    },
+    "activated=1": {
+      "model": "uh4-5:block/corruption_block_1"
+    },
+    "activated=2": {
+      "model": "uh4-5:block/corruption_block_2"
+    },
+    "activated=3": {
+      "model": "uh4-5:block/corruption_block_3"
+    },
+    "activated=4": {
+      "model": "uh4-5:block/corruption_block_4"
+    }
+  }
+}

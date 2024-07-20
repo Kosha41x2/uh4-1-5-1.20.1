@@ -22,7 +22,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.LAPIS_BLUE)));
 
     public static final Block CORRUPTION_BLOCK = registerBlock("corruption_block",
-            new CorruptionBlock(FabricBlockSettings.copyOf(Blocks.WARPED_WART_BLOCK).mapColor(MapColor.EMERALD_GREEN)));
+            new CorruptionBlock(FabricBlockSettings.copyOf(Blocks.WARPED_WART_BLOCK).mapColor(MapColor.BLACK).strength(4.0f)
+                    .luminance((state) -> state.get(CorruptionBlock.ACTIVATED) > 0 ? 2 : 0)));
 
 
     private static Block registerBlock(String name, Block block){

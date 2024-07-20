@@ -11,6 +11,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.IntProperty;
 import net.minecraft.util.math.BlockPos;
 
 import net.minecraft.util.math.Box;
@@ -18,6 +19,7 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.world.tick.TickPriority;
 
 import java.util.HashMap;
 import java.util.List;
@@ -30,7 +32,7 @@ public class CorruptionBlock extends Block {
     }
 
     private Map <LivingEntity, Long> lastAppliedTimes = new HashMap<>();
-    public static final BooleanProperty ACTIVATED = BooleanProperty.of("activated");
+    public static final IntProperty ACTIVATED = IntProperty.of("activated", 0, 4);
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
@@ -39,10 +41,11 @@ public class CorruptionBlock extends Block {
 
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        if (state.get(ACTIVATED)) {
+        super.scheduledTick(state, world, pos, random);
+        if (state.get(ACTIVATED) > 0) {
             boolean Stepping = isEntityOnBlock(world, pos);
             if(!Stepping){
-                world.setBlockState(pos, state.with(ACTIVATED,false));
+                world.setBlockState(pos, state.with(ACTIVATED,0));
             }
         }
     }
@@ -53,8 +56,24 @@ public class CorruptionBlock extends Block {
         if(!world.isClient && entity instanceof LivingEntity livingEntity){
             long currentTime = world.getTime();
             long lastAppliedTime = lastAppliedTimes.getOrDefault(livingEntity, 0L);
-            world.setBlockState(pos, state.with(ACTIVATED,true));
+            world.scheduleBlockTick(pos, this, 10, TickPriority.NORMAL);
+
+            switch ((int) (currentTime - lastAppliedTime)){
+                case 3:
+                    world.setBlockState(pos, state.with(ACTIVATED,1));
+                    break;
+
+                case 7:
+                    world.setBlockState(pos, state.with(ACTIVATED,2));
+                    break;
+
+                case 11:
+                    world.setBlockState(pos, state.with(ACTIVATED,3));
+                    break;
+            }
+
             if (currentTime - lastAppliedTime >= 15) { // 20 ticks = 1 second
+                world.setBlockState(pos, state.with(ACTIVATED,4));
                 EffectApplier(livingEntity, world);
                 lastAppliedTimes.put(livingEntity, currentTime);
             }
