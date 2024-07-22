@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "uh4-5:raw_glitchtenite"
+    }
+  ],
+  "result": {
+    "item": "uh4-5:corruption_block"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "uh4-5:glitchtenite_ingot"
+    },
+    "%": {
+      "item": "uh4-5:glitchtenite_block"
+    },
+    "/": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "##%",
+    " /#",
+    "# #"
+  ],
+  "result": {
+    "item": "uh4-5:glitched_crossbow"
+  },
+  "show_notification": true
+}

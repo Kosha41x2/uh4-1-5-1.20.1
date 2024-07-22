@@ -8,12 +8,20 @@
   "item.uh4-5.glitchtenite_sword": "Espada de glitchtenita",
   "item.uh4-5.glitched_crossbow": "Ballesta corrupta",
 
+  "item.uh4-5.glitchtenite_helmet": "Casco de glitchtenita",
+  "item.uh4-5.glitchtenite_chestplate": "Peto de glitchtenita",
+  "item.uh4-5.glitchtenite_leggings": "Pantalones de glitchtenita",
+  "item.uh4-5.glitchtenite_boots": "botas de glitchtenita",
+
   "block.uh4-5.raw_glitchtenite_block": "Bloque de glitchtenita cruda",
   "block.uh4-5.glitchtenite_block": "Bloque de glitchtenita",
   "block.uh4-5.corruption_block": "Bloque de corrupción",
 
   "itemgroup.corrupted": "Corrupto",
 
-  "death.attack.corruption": "%1$s ha muerto por la currupción."
+  "death.attack.corruption": "%1$s ha muerto por la currupción.",
 
+  "tooltip.armor.corruption_resistance" : "Resistencia contra la corrupción: %s",
+
+  "attribute.name.generic.corruption_resistance": "Resistencia a la corrupción"
 }

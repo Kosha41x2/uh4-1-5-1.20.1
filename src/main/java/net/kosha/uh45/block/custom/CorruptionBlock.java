@@ -8,6 +8,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 
 
+import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -81,6 +82,7 @@ public class CorruptionBlock extends Block {
         else{
             super.onSteppedOn(world, pos, state, entity);
         }
+
     }
 
     private void EffectApplier(LivingEntity livingEntity, World world){

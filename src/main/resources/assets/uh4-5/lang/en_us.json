@@ -8,13 +8,20 @@
   "item.uh4-5.glitchtenite_sword": "Glitchtenite sword",
   "item.uh4-5.glitched_crossbow": "Glitched crossbow",
 
+  "item.uh4-5.glitchtenite_helmet": "Glitchtenite helmet",
+  "item.uh4-5.glitchtenite_chestplate": "Glitchtenite chestplate",
+  "item.uh4-5.glitchtenite_leggings": "Glitchtenite leggings",
+  "item.uh4-5.glitchtenite_boots": "Glitchtenite boots",
+
   "block.uh4-5.raw_glitchtenite_block": "Raw glitchtenite block",
   "block.uh4-5.glitchtenite_block": "Glitchtenite block",
   "block.uh4-5.corruption_block": "Corruption block",
 
-
-
   "itemgroup.corrupted": "Corrupted",
 
-  "death.attack.corruption": "%1$s died from corruption."
+  "death.attack.corruption": "%1$s died from corruption.",
+
+  "tooltip.armor.corruption_resistance" : "Corruption resistance: %s",
+
+  "attribute.name.generic.corruption_resistance": "Corruption resistance"
 }

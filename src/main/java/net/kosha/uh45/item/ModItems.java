@@ -3,6 +3,7 @@ package net.kosha.uh45.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.kosha.uh45.UH415;
 import net.kosha.uh45.item.custom.GlitchedCrossbowItem;
+import net.kosha.uh45.item.custom.GlitchteniteArmor;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -18,6 +19,10 @@ public class ModItems {
     public static final Item GLITCHTENITE_HOE = registerItem("glitchtenite_hoe", new HoeItem(ModToolMaterial.GLITCHTENITE,0, realAttackSpeed(1.0f),new FabricItemSettings()));
     public static final Item GLITCHTENITE_SWORD = registerItem("glitchtenite_sword", new SwordItem(ModToolMaterial.GLITCHTENITE,3, realAttackSpeed(1.6f),new FabricItemSettings()));
     public static final Item GLITCHED_CROSSBOW = registerItem("glitched_crossbow", (Item)new GlitchedCrossbowItem(new FabricItemSettings().maxCount(1).maxDamage(687)));
+    public static final Item GLITCHTENITE_HELMET = registerItem("glitchtenite_helmet", new GlitchteniteArmor(ModArmorMaterials.GLITCHTENITE, ArmorItem.Type.HELMET, new FabricItemSettings(), 1));
+    public static final Item GLITCHTENITE_CHESTPLATE = registerItem("glitchtenite_chestplate", new GlitchteniteArmor(ModArmorMaterials.GLITCHTENITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(), 1));
+    public static final Item GLITCHTENITE_LEGGINGS = registerItem("glitchtenite_leggings", new GlitchteniteArmor(ModArmorMaterials.GLITCHTENITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings(), 1));
+    public static final Item GLITCHTENITE_BOOTS = registerItem("glitchtenite_boots", new GlitchteniteArmor(ModArmorMaterials.GLITCHTENITE,ArmorItem.Type.BOOTS, new FabricItemSettings(), 1));
 
 
     private static Item registerItem(String name, Item item){

@@ -30,6 +30,11 @@ public class ModItemGroups {
                         entries.add(ModItems.GLITCHTENITE_HOE);
                         entries.add(ModItems.GLITCHED_CROSSBOW);
 
+                        entries.add(ModItems.GLITCHTENITE_HELMET);
+                        entries.add(ModItems.GLITCHTENITE_CHESTPLATE);
+                        entries.add(ModItems.GLITCHTENITE_LEGGINGS);
+                        entries.add(ModItems.GLITCHTENITE_BOOTS);
+
                     }).build());
 
     public static void registerItemGroups(){
@@ -59,6 +64,11 @@ public class ModItemGroups {
         entries.add(ModItems.GLITCHTENITE_SWORD);
         entries.add(ModItems.GLITCHTENITE_AXE);
         entries.add(ModItems.GLITCHED_CROSSBOW);
+
+        entries.add(ModItems.GLITCHTENITE_HELMET);
+        entries.add(ModItems.GLITCHTENITE_CHESTPLATE);
+        entries.add(ModItems.GLITCHTENITE_LEGGINGS);
+        entries.add(ModItems.GLITCHTENITE_BOOTS);
     }
 
 

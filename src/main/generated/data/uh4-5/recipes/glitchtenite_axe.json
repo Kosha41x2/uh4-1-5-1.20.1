@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "uh4-5:glitchtenite_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " ##",
+    " /#",
+    " / "
+  ],
+  "result": {
+    "item": "uh4-5:glitchtenite_axe"
+  },
+  "show_notification": true
+}
