@@ -3,14 +3,14 @@ package net.kosha.uh45.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kosha.uh45.UH415;
+import net.kosha.uh45.block.custom.CorruptedIce;
 import net.kosha.uh45.block.custom.CorruptionBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -24,6 +24,9 @@ public class ModBlocks {
     public static final Block CORRUPTION_BLOCK = registerBlock("corruption_block",
             new CorruptionBlock(FabricBlockSettings.copyOf(Blocks.WARPED_WART_BLOCK).mapColor(MapColor.BLACK).strength(4.0f)
                     .luminance((state) -> state.get(CorruptionBlock.ACTIVATED) > 0 ? 2 : 0)));
+
+    public static final Block CORRUPTED_ICE = registerBlock("corrupted_ice",
+            new CorruptedIce(FabricBlockSettings.copyOf(Blocks.WARPED_WART_BLOCK).strength(3.0F)));
 
 
     private static Block registerBlock(String name, Block block){

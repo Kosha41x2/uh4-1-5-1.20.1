@@ -86,5 +86,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModItems.RAW_GLITCHTENITE)
                 .criterion("corruption_block", FabricRecipeProvider.conditionsFromItem(ModBlocks.CORRUPTION_BLOCK))
                 .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CORRUPTED_ICE)
+                .input(Blocks.BLUE_ICE)
+                .input(ModItems.RAW_GLITCHTENITE)
+                .criterion("corrupted_ice", FabricRecipeProvider.conditionsFromItem(ModBlocks.CORRUPTED_ICE))
+                .offerTo(exporter);
     }
 }

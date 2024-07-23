@@ -18,6 +18,5 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     public void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.GLITCHTENITE_HELMET, ModItems.GLITCHTENITE_HELMET, ModItems.GLITCHTENITE_BOOTS, ModItems.GLITCHTENITE_CHESTPLATE);
-
     }
 }
