@@ -7,7 +7,11 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
 public class ModEntityAttributes {
-    public static final EntityAttribute GENERIC_CORRUPTION_RESISTANCE = register("generic.corruption_resistance", new ClampedEntityAttribute("attribute.name.generic.corruption_resistance", 0, 0.0, 12.0).setTracked(true));
+
+    //this variable is also used in the ModDamageTypes class to calculate the amount of damage taken
+    public static float maxCorruptionResistance = 12.0f;
+
+    public static final EntityAttribute GENERIC_CORRUPTION_RESISTANCE = register("generic.corruption_resistance", new ClampedEntityAttribute("attribute.name.generic.corruption_resistance", 0, 0.0, maxCorruptionResistance).setTracked(true));
 
     private static EntityAttribute register(String id, EntityAttribute attribute) {
         return Registry.register(Registries.ATTRIBUTE, id, attribute);

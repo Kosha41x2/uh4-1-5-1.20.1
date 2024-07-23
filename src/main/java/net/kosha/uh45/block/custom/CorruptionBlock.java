@@ -102,20 +102,20 @@ public class CorruptionBlock extends Block {
         }
         if(inSlowness > 1800) {
             livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, inSlowness + 20 , 3));
-            livingEntity.damage(ModDamageTypes.of(world, ModDamageTypes.CORRUPTION_DAMAGE) , 2.0f);
+            ModDamageTypes.DamageWithCorruption(livingEntity, world, 2.0f);
         }
-        else if (inSlowness > 600){
-            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, inSlowness + 120 , 1));
-            livingEntity.damage(ModDamageTypes.of(world, ModDamageTypes.CORRUPTION_DAMAGE) , 1.0f);
+        else if (inSlowness > 300){
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, inSlowness + 30 , 1));
+            ModDamageTypes.DamageWithCorruption(livingEntity, world, 1.0f);
         }
         else{
             livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, inSlowness + 60 , 0));
         }
         if (inWeakness > 1200){
-            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, inWeakness * 2 + 20 , 1));
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, inWeakness + 30 , 1));
         }
         else{
-            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, inWeakness * 2 + 20 , 0));
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, inWeakness + 60 , 0));
         }
     }
 
