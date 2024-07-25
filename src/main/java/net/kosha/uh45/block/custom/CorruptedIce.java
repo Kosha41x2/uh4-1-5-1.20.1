@@ -48,6 +48,6 @@ public class CorruptedIce extends TransparentBlock {
     }
 
     private void effectApplier(LivingEntity livingEntity, World world){
-        ModDamageTypes.DamageWithCorruption(livingEntity, world, 3.0f);
+        ModDamageTypes.DamageWithCorruption(livingEntity, world, 2.0f);
     }
 }

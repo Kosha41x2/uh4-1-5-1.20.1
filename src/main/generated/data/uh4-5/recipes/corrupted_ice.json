@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:blue_ice"
+    },
+    {
+      "item": "uh4-5:raw_glitchtenite"
+    }
+  ],
+  "result": {
+    "item": "uh4-5:corrupted_ice"
+  }
+}

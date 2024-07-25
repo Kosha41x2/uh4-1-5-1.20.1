@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "corrupted_ice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uh4-5:corrupted_ice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "uh4-5:corrupted_ice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "corrupted_ice",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "uh4-5:corrupted_ice"
+    ]
+  },
+  "sends_telemetry_event": false
+}
