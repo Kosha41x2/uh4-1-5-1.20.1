@@ -38,6 +38,8 @@ public class ModItemGroups {
                         entries.add(ModItems.GLITCHTENITE_LEGGINGS);
                         entries.add(ModItems.GLITCHTENITE_BOOTS);
 
+                        entries.add(ModItems.CORRUPTED_GRAPE);
+
                     }).build());
 
     public static void registerItemGroups(){
@@ -47,6 +49,7 @@ public class ModItemGroups {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItemGroups::addBlocksToTabBlocks);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItemGroups::addItemsToTabCombat);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItemGroups::addItemsToTabTools);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItemGroups::addItemsToTabFoodAndDrink);
     }
 
     //Already existing groups
@@ -81,6 +84,10 @@ public class ModItemGroups {
         entries.add(ModItems.GLITCHTENITE_AXE);
         entries.add(ModItems.GLITCHTENITE_SHOVEL);
         entries.add(ModItems.GLITCHTENITE_HOE);
+    }
+
+    private static void addItemsToTabFoodAndDrink(FabricItemGroupEntries entries){
+        entries.add(ModItems.CORRUPTED_GRAPE);
     }
 
 }

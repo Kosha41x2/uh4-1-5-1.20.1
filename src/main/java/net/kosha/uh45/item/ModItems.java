@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.kosha.uh45.UH415;
 import net.kosha.uh45.item.custom.GlitchedCrossbowItem;
 import net.kosha.uh45.item.custom.GlitchteniteArmor;
+import net.kosha.uh45.item.custom.ModFoodComponents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -23,6 +24,7 @@ public class ModItems {
     public static final Item GLITCHTENITE_CHESTPLATE = registerItem("glitchtenite_chestplate", new GlitchteniteArmor(ModArmorMaterials.GLITCHTENITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(), 1));
     public static final Item GLITCHTENITE_LEGGINGS = registerItem("glitchtenite_leggings", new GlitchteniteArmor(ModArmorMaterials.GLITCHTENITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings(), 1));
     public static final Item GLITCHTENITE_BOOTS = registerItem("glitchtenite_boots", new GlitchteniteArmor(ModArmorMaterials.GLITCHTENITE,ArmorItem.Type.BOOTS, new FabricItemSettings(), 1));
+    public static final Item CORRUPTED_GRAPE = registerItem("corrupted_grape", new Item(new FabricItemSettings().food(ModFoodComponents.CORRUPTED_GRAPE)));
 
 
     private static Item registerItem(String name, Item item){

@@ -17,6 +17,8 @@
   "block.uh4-5.glitchtenite_block": "Bloque de glitchtenita",
   "block.uh4-5.corruption_block": "Bloque de corrupción",
 
+  "item.uh4-5.corrupted_grape": "Uva Corrupta",
+
   "itemgroup.corrupted": "Corrupto",
 
   "death.attack.corruption": "%1$s ha muerto por la currupción.",

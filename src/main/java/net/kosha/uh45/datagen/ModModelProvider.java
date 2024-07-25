@@ -34,6 +34,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GLITCHTENITE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GLITCHTENITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GLITCHTENITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPTED_GRAPE, Models.GENERATED);
 
         itemModelGenerator.registerArmor((ArmorItem) ModItems.GLITCHTENITE_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.GLITCHTENITE_CHESTPLATE);
