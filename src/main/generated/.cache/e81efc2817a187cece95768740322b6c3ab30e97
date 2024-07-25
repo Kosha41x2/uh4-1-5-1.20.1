@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-25T23:05:28.2633462	UH4 1-5/Model Definitions
+// 1.20.1	2024-07-25T23:23:24.4601932	UH4 1-5/Model Definitions
 7adb752e4eb4bc8f228295bcbba7500d39739f95 assets\uh4-5\models\item\glitchtenite_helmet_gold_trim.json
 83b1aabd001a26bab4c0d74fb0de85ac86c44300 assets\uh4-5\models\item\glitchtenite_leggings_quartz_trim.json
 c39c7b702d8f778731d97fdbf9d85fea341d06e5 assets\uh4-5\models\item\glitchtenite_boots_quartz_trim.json
@@ -49,8 +49,8 @@ c66ca1d7ae3f095f8b2ec60125b742b908acf3ba assets\uh4-5\models\item\glitchtenite_c
 0eae99a3dfce7d10974c35248a1c8f080966e960 assets\uh4-5\models\item\glitchtenite_shovel.json
 c4ade9751a02323f99331c5a290901b9545807a4 assets\uh4-5\models\item\glitchtenite_helmet_redstone_trim.json
 52d0676bd86d6324510af149ee8537caa9b38ca2 assets\uh4-5\models\item\glitchtenite_chestplate_emerald_trim.json
-da7efa858a64a4e30214f4ccd46860640adb1133 assets\uh4-5\models\item\glitchtenite_helmet_amethyst_trim.json
 0f3affaf7432f5ecb8e07a51e1235b870d4d7205 assets\uh4-5\models\item\glitchtenite_leggings_netherite_trim.json
+da7efa858a64a4e30214f4ccd46860640adb1133 assets\uh4-5\models\item\glitchtenite_helmet_amethyst_trim.json
 4e9cd9a6d758b6af27bcb2d86f444371343981d1 assets\uh4-5\models\item\glitchtenite_helmet_emerald_trim.json
 1ae31104650007820c54f756699cab9941f3f18b assets\uh4-5\models\item\glitchtenite_boots_amethyst_trim.json
 5a267eaa4e5f28e79aae3f909c7b4fb34136c724 assets\uh4-5\models\item\glitchtenite_chestplate_diamond_trim.json

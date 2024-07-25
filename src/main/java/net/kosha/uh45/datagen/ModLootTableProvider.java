@@ -14,6 +14,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GLITCHTENITE_BLOCK);
         addDrop(ModBlocks.RAW_GLITCHTENITE_BLOCK);
         addDrop(ModBlocks.CORRUPTION_BLOCK);
-        addDrop(ModBlocks.CORRUPTED_ICE);
+        addDropWithSilkTouch(ModBlocks.CORRUPTED_ICE);
     }
 }

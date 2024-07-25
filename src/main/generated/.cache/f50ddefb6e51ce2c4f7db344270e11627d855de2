@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-25T23:05:28.2658058	UH4 1-5/Recipes
+// 1.20.1	2024-07-25T23:23:24.4621452	UH4 1-5/Recipes
 2b2bed24636a1d4adbd54b1c4ee0eb18f6f0a630 data\uh4-5\advancements\recipes\tools\glitchtenite_pickaxe.json
 f16908702fa870b84c90ed03514f9256fcbff8d7 data\uh4-5\advancements\recipes\misc\glitchtenite_ingot_from_smelting_raw_glitchtenite.json
 67201a5732fc3ea0cac39adac796524d85997f84 data\uh4-5\advancements\recipes\tools\glitched_crossbow.json
@@ -10,9 +10,9 @@ c2b53b1b3ddc422e3115bcb0f5d4b9853b55a210 data\uh4-5\recipes\glitchtenite_hoe.jso
 f548f51c4e5236f7596699c3a287889380cc6e1f data\uh4-5\recipes\glitchtenite_shovel.json
 426b3e17a9d3e628b13a68db10476924950eee04 data\uh4-5\recipes\glitchtenite_ingot_from_blasting_raw_glitchtenite.json
 db3f51afdf65a81da7c0ca74f54aa96b9134c34d data\uh4-5\recipes\glitchtenite_pickaxe.json
+e782b337a680557903a3dcf2c0dc7e953595cb2f data\uh4-5\recipes\raw_glitchtenite_block.json
 ae948fcc7b3e60baaf25f1286617f17165fc461f data\uh4-5\recipes\corruption_block.json
 7809677984645237f4d24ad7ddd8a0ef912c04e2 data\uh4-5\recipes\corrupted_ice.json
-e782b337a680557903a3dcf2c0dc7e953595cb2f data\uh4-5\recipes\raw_glitchtenite_block.json
 6489c8030bad79d1d71bf145e609797ef9043bdf data\uh4-5\advancements\recipes\building_blocks\glitchtenite_ingot.json
 ac9be3ede7e5171a7fd422e8465f9cd6e6450507 data\uh4-5\recipes\glitched_crossbow.json
 ff92554191b1992a1ff95c1320c8bb4e4d37292b data\uh4-5\advancements\recipes\tools\glitchtenite_hoe.json
@@ -21,8 +21,8 @@ ff92554191b1992a1ff95c1320c8bb4e4d37292b data\uh4-5\advancements\recipes\tools\g
 7d02f4397e31cad5220c0db59e0a124bd3448af4 data\uh4-5\recipes\raw_glitchtenite.json
 711ad4f517bb3941a2c09faf37b13fe5049ae7a1 data\uh4-5\advancements\recipes\decorations\raw_glitchtenite_block.json
 df9a95a1aa6808c062206d145933085d9f79a66e data\uh4-5\recipes\glitchtenite_ingot.json
-d62831a3da6043d1ca7e2e6d16901c4fcade7818 data\uh4-5\recipes\glitchtenite_block.json
 e964d20906259eb1066da2503345edb37ffc1924 data\uh4-5\recipes\glitchtenite_axe.json
+d62831a3da6043d1ca7e2e6d16901c4fcade7818 data\uh4-5\recipes\glitchtenite_block.json
 c35c427c03bab850dbabd1f58b688dafd5d4a04f data\uh4-5\advancements\recipes\tools\glitchtenite_shovel.json
 bad7be65691d974032bdedaad7abc528f472aef8 data\uh4-5\advancements\recipes\building_blocks\corruption_block.json
 a446f9eb5eddf32dd3e1621a6b7abc2a9e30462b data\uh4-5\advancements\recipes\tools\glitchtenite_axe.json

@@ -26,5 +26,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.ICE)
                 .add(ModBlocks.CORRUPTED_ICE);
 
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.CORRUPTION_BLOCK);
+
     }
 }
