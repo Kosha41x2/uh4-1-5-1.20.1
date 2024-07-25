@@ -1,3 +1,5 @@
-// 1.20.1	2024-07-23T20:36:21.3983105	UH4 1-5/Block Loot Tables
+// 1.20.1	2024-07-25T23:05:28.2613943	UH4 1-5/Block Loot Tables
+28c36b9e9654551a465b2f28f781716700fc5774 data\uh4-5\loot_tables\blocks\corruption_block.json
 3db34ec0ffa59c90ef6a30a030a7d5ac209eba15 data\uh4-5\loot_tables\blocks\glitchtenite_block.json
 e4808a06585d615d1be2ff4329ab25437e478fac data\uh4-5\loot_tables\blocks\raw_glitchtenite_block.json
+a6a03afba64969d9614a5009811615a9c5e3d2bf data\uh4-5\loot_tables\blocks\corrupted_ice.json

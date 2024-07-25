@@ -22,5 +22,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.GLITCHTENITE_BLOCK)
                 .add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.ICE)
+                .add(ModBlocks.CORRUPTED_ICE);
+
     }
 }
