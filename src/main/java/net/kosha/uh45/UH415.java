@@ -3,6 +3,7 @@ package net.kosha.uh45;
 import net.fabricmc.api.ModInitializer;
 
 import net.kosha.uh45.block.ModBlocks;
+import net.kosha.uh45.effect.ModEffects;
 import net.kosha.uh45.entity.attribute.ModEntityAttributes;
 import net.kosha.uh45.item.ModItemGroups;
 import net.kosha.uh45.item.ModItems;
@@ -20,5 +21,7 @@ public class UH415 implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModEntityAttributes.registerModEntityAttributes();
+
+		ModEffects.registerEffects();
 	}
 }

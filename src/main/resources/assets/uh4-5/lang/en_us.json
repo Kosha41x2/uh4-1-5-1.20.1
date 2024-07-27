@@ -25,5 +25,6 @@
 
   "tooltip.armor.corruption_resistance" : "Corruption resistance: %s",
 
-  "attribute.name.generic.corruption_resistance": "Corruption resistance"
+  "attribute.name.generic.corruption_resistance": "Corruption Resistance",
+  "effect.uh4-5.corruption_resistance" : "Anti-Corruption"
 }
