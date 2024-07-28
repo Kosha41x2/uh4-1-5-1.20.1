@@ -39,6 +39,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GLITCHTENITE_BOOTS);
 
                         entries.add(ModItems.CORRUPTED_GRAPE);
+                        entries.add(ModItems.POISONOUS_BERRY);
 
                     }).build());
 
@@ -88,6 +89,7 @@ public class ModItemGroups {
 
     private static void addItemsToTabFoodAndDrink(FabricItemGroupEntries entries){
         entries.add(ModItems.CORRUPTED_GRAPE);
+        entries.add(ModItems.POISONOUS_BERRY);
     }
 
 }

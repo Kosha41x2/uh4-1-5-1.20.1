@@ -25,6 +25,8 @@ public class ModItems {
     public static final Item GLITCHTENITE_LEGGINGS = registerItem("glitchtenite_leggings", new GlitchteniteArmor(ModArmorMaterials.GLITCHTENITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings(), 1));
     public static final Item GLITCHTENITE_BOOTS = registerItem("glitchtenite_boots", new GlitchteniteArmor(ModArmorMaterials.GLITCHTENITE,ArmorItem.Type.BOOTS, new FabricItemSettings(), 1));
     public static final Item CORRUPTED_GRAPE = registerItem("corrupted_grape", new Item(new FabricItemSettings().food(ModFoodComponents.CORRUPTED_GRAPE)));
+    public static final Item POISONOUS_BERRY = registerItem("poisonous_berry", new Item(new FabricItemSettings().food(ModFoodComponents.POISONOUS_BERRY)));
+
 
 
     private static Item registerItem(String name, Item item){

@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-25T23:45:19.6724806	UH4 1-5/Model Definitions
+// 1.20.1	2024-07-29T01:40:19.5630784	UH4 1-5/Model Definitions
 7adb752e4eb4bc8f228295bcbba7500d39739f95 assets\uh4-5\models\item\glitchtenite_helmet_gold_trim.json
 83b1aabd001a26bab4c0d74fb0de85ac86c44300 assets\uh4-5\models\item\glitchtenite_leggings_quartz_trim.json
 c39c7b702d8f778731d97fdbf9d85fea341d06e5 assets\uh4-5\models\item\glitchtenite_boots_quartz_trim.json
@@ -35,8 +35,8 @@ e8bf332a133fc198912edffcf1743a29ed110254 assets\uh4-5\models\item\corrupted_ice.
 fe9dc52a7b557fdd5dc424589791f7cbc0925352 assets\uh4-5\models\item\corrupted_grape.json
 5e5a49d875f743de90c29a609a7f8f68d33ea876 assets\uh4-5\models\item\glitchtenite_leggings_copper_trim.json
 0cb642e3b3593a2e3feb976db51bbdb2692d59b9 assets\uh4-5\models\item\glitchtenite_leggings_amethyst_trim.json
-53c17586aef98956541bc1a662096aee0aeac4c2 assets\uh4-5\models\item\glitchtenite_boots_emerald_trim.json
 e33540b055c5673aca4e7d780bb1a3753bcfebc8 assets\uh4-5\models\item\glitchtenite_leggings_lapis_trim.json
+53c17586aef98956541bc1a662096aee0aeac4c2 assets\uh4-5\models\item\glitchtenite_boots_emerald_trim.json
 f14c89b7642f163fdc2c31b94b02f93eb93c8bed assets\uh4-5\models\item\glitchtenite_boots_netherite_trim.json
 0c21baf1725eea059911720acd9ed0f1facd90ba assets\uh4-5\models\block\corrupted_ice.json
 d91aa00db9f17e84ed4e017fae6c2ecf0bd627f7 assets\uh4-5\blockstates\raw_glitchtenite_block.json
@@ -54,6 +54,7 @@ da7efa858a64a4e30214f4ccd46860640adb1133 assets\uh4-5\models\item\glitchtenite_h
 0f3affaf7432f5ecb8e07a51e1235b870d4d7205 assets\uh4-5\models\item\glitchtenite_leggings_netherite_trim.json
 4e9cd9a6d758b6af27bcb2d86f444371343981d1 assets\uh4-5\models\item\glitchtenite_helmet_emerald_trim.json
 1ae31104650007820c54f756699cab9941f3f18b assets\uh4-5\models\item\glitchtenite_boots_amethyst_trim.json
+f949fe954f32c5e2d505cbde7c283778ee4e52de assets\uh4-5\models\item\poisonous_berry.json
 5a267eaa4e5f28e79aae3f909c7b4fb34136c724 assets\uh4-5\models\item\glitchtenite_chestplate_diamond_trim.json
 b54f14ee6eea976fa0d6204d7ede71200c6b8096 assets\uh4-5\models\item\raw_glitchtenite_block.json
 d8fc57bbe6364e87053717c31e09f386f5056ba1 assets\uh4-5\models\item\glitchtenite_chestplate_lapis_trim.json
