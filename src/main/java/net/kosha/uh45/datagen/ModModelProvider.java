@@ -23,6 +23,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_GLITCHTENITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GLITCHTENITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORRUPTED_ICE);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.HEART_FLOWER, ModBlocks.POTTED_HEART_FLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.STRANGE_BUSH, ModBlocks.POTTED_STRANGE_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

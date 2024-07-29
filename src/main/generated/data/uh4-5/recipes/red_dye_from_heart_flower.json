@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "flower_dyes",
+  "ingredients": [
+    {
+      "item": "uh4-5:heart_flower"
+    }
+  ],
+  "result": {
+    "item": "minecraft:red_dye"
+  }
+}

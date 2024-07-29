@@ -92,5 +92,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModItems.RAW_GLITCHTENITE)
                 .criterion("corrupted_ice", FabricRecipeProvider.conditionsFromItem(ModBlocks.CORRUPTED_ICE))
                 .offerTo(exporter);
+        offerSingleOutputShapelessRecipe(exporter, Items.RED_DYE, ModBlocks.HEART_FLOWER, "flower_dyes");
+        offerSingleOutputShapelessRecipe(exporter, Items.CYAN_DYE, ModBlocks.STRANGE_BUSH, "flower_dyes");
     }
 }

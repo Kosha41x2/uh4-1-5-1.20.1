@@ -5,7 +5,9 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kosha.uh45.UH415;
 import net.kosha.uh45.block.custom.CorruptedIce;
 import net.kosha.uh45.block.custom.CorruptionBlock;
+import net.kosha.uh45.effect.ModEffects;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -27,6 +29,20 @@ public class ModBlocks {
 
     public static final Block CORRUPTED_ICE = registerBlock("corrupted_ice",
             new CorruptedIce(FabricBlockSettings.copyOf(Blocks.BLUE_ICE).strength(3.0F)));
+
+    public static final Block HEART_FLOWER = registerBlock("heart_flower",
+            new FlowerBlock(StatusEffects.ABSORPTION, 10,
+                    FabricBlockSettings.copyOf(Blocks.RED_TULIP).nonOpaque().noCollision()));
+
+    public static final Block POTTED_HEART_FLOWER = Registry.register(Registries.BLOCK, new Identifier(UH415.MOD_ID, "potted_heart_flower"),
+            new FlowerPotBlock(HEART_FLOWER ,FabricBlockSettings.copyOf(Blocks.POTTED_RED_TULIP).nonOpaque()));
+
+    public static final Block STRANGE_BUSH = registerBlock("strange_bush",
+            new FlowerBlock(ModEffects.CORRUPTION_RESISTANCE, 10,
+                    FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID).nonOpaque().noCollision()));
+
+    public static final Block POTTED_STRANGE_BUSH = Registry.register(Registries.BLOCK, new Identifier(UH415.MOD_ID, "potted_strange_bush"),
+            new FlowerPotBlock(STRANGE_BUSH ,FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block){
