@@ -30,5 +30,25 @@
   "tooltip.armor.corruption_resistance" : "Resistencia contra la corrupción: %s",
 
   "attribute.name.generic.corruption_resistance": "Resistencia a la corrupción",
-  "effect.uh4-5.corruption_resistance" : "Anti-Corrupción"
+  "effect.uh4-5.corruption_resistance" : "Anti-Corrupción",
+
+  "item.minecraft.potion.effect.corruption_resistance_potion": "Poción de Anti-Corrupción",
+  "item.minecraft.splash_potion.effect.corruption_resistance_potion": "Poción de Anti-Corrupción Arrojadiza",
+  "item.minecraft.lingering_potion.effect.corruption_resistance_potion": "Poción de Anti-Corrupción Persistente",
+  "item.minecraft.potion.effect.long_corruption_resistance_potion": "Poción de Anti-Corrupción",
+  "item.minecraft.splash_potion.effect.long_corruption_resistance_potion": "Poción de Anti-Corrupción Arrojadiza",
+  "item.minecraft.lingering_potion.effect.long_corruption_resistance_potion": "Poción de Anti-Corrupción Persistente",
+  "item.minecraft.potion.effect.strong_corruption_resistance_potion": "Poción de Anti-Corrupción",
+  "item.minecraft.splash_potion.effect.strong_corruption_resistance_potion": "Poción de Anti-Corrupción Arrojadiza",
+  "item.minecraft.lingering_potion.effect.strong_corruption_resistance_potion": "Poción de Anti-Corrupción Persistente",
+
+  "sounds.uh4-5.uh4_ost_main_theme": "Música del tema principal",
+  "sounds.uh4-5.uh4_ost_battle_the_gatekeeper" : "Música The Gatekeeper" ,
+  "sounds.uh4-5.uh4_ost_battle_the_gatekeeper_phase_2" : "Música The Gatekeeper fase 2",
+  "item.uh4-5.main_theme_music_disk" : "UH4 OST Disco de Música del Tema Principal",
+  "item.uh4-5.main_theme_music_disk.desc" : "La Tetera Gamer - UH4 OST Main Theme",
+  "item.uh4-5.the_gatekeeper_music_disk" : "UH4 OST Battle Disco de Música de The Gatekeeper",
+  "item.uh4-5.the_gatekeeper_music_disk.desc" : "La Tetera Gamer - UH4 OST Battle The Gatekeeper ",
+  "item.uh4-5.the_gatekeeper_phase_2_music_disk" : "UH4 OST Battle Disco de Música de The Gatekeeper fase 2",
+  "item.uh4-5.the_gatekeeper_phase_2_music_disk.desc" : "La Tetera Gamer - UH4 OST Battle The Gatekeeper Phase 2"
 }

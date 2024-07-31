@@ -30,5 +30,26 @@
   "tooltip.armor.corruption_resistance" : "Corruption resistance: %s",
 
   "attribute.name.generic.corruption_resistance": "Corruption Resistance",
-  "effect.uh4-5.corruption_resistance" : "Anti-Corruption"
+  "effect.uh4-5.corruption_resistance" : "Anti-Corruption",
+
+  "item.minecraft.potion.effect.corruption_resistance_potion": "Anti-Corruption Potion",
+  "item.minecraft.splash_potion.effect.corruption_resistance_potion": "Splash Potion of Anti-Corruption",
+  "item.minecraft.lingering_potion.effect.corruption_resistance_potion": "Lingering Potion of Anti-Corruption",
+  "item.minecraft.potion.effect.long_corruption_resistance_potion": "Anti-Corruption Potion",
+  "item.minecraft.splash_potion.effect.long_corruption_resistance_potion": "Splash Potion of Anti-Corruption",
+  "item.minecraft.lingering_potion.effect.long_corruption_resistance_potion": "Lingering Potion of Anti-Corruption",
+  "item.minecraft.potion.effect.strong_corruption_resistance_potion": "Anti-Corruption Potion",
+  "item.minecraft.splash_potion.effect.strong_corruption_resistance_potion": "Splash Potion of Anti-Corruption",
+  "item.minecraft.lingering_potion.effect.strong_corruption_resistance_potion": "Lingering Potion of Anti-Corruption",
+
+  "sounds.uh4-5.uh4_ost_main_theme": "Main Theme Music",
+  "sounds.uh4-5.uh4_ost_battle_the_gatekeeper" : "The Gatekeeper Music" ,
+  "sounds.uh4-5.uh4_ost_battle_the_gatekeeper_phase_2" : "The Gatekeeper Phase 2 Music",
+  "item.uh4-5.main_theme_music_disk" : "Main Theme Music Disk",
+  "item.uh4-5.main_theme_music_disk.desc" : "La Tetera Gamer - UH4 OST Main Theme",
+  "item.uh4-5.the_gatekeeper_music_disk" : "The Gatekeeper Music Disk",
+  "item.uh4-5.the_gatekeeper_music_disk.desc" : "La Tetera Gamer - UH4 OST Battle The Gatekeeper ",
+  "item.uh4-5.the_gatekeeper_phase_2_music_disk" : "The Gatekeeper Phase 2 Music Disk",
+  "item.uh4-5.the_gatekeeper_phase_2_music_disk.desc" : "La Tetera Gamer - UH4 OST Battle The Gatekeeper Phase 2"
+
 }

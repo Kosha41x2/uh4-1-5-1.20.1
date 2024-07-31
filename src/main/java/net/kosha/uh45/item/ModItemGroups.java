@@ -44,6 +44,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRANGE_BUSH);
                         entries.add(ModBlocks.HEART_FLOWER);
 
+                        entries.add(ModItems.UH4_OST_MAIN_THEME_MUSIC_DISK);
+                        entries.add(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER);
+                        entries.add(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2);
+
+
                     }).build());
 
     public static void registerItemGroups(){
@@ -90,6 +95,10 @@ public class ModItemGroups {
         entries.add(ModItems.GLITCHTENITE_AXE);
         entries.add(ModItems.GLITCHTENITE_SHOVEL);
         entries.add(ModItems.GLITCHTENITE_HOE);
+
+        entries.add(ModItems.UH4_OST_MAIN_THEME_MUSIC_DISK);
+        entries.add(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER);
+        entries.add(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2);
     }
 
     private static void addItemsToTabFoodAndDrink(FabricItemGroupEntries entries){

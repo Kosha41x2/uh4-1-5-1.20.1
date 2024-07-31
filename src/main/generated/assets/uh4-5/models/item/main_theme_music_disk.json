@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "uh4-5:item/main_theme_music_disk"
+  }
+}

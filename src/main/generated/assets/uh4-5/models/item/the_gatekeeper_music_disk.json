@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "uh4-5:item/the_gatekeeper_music_disk"
+  }
+}

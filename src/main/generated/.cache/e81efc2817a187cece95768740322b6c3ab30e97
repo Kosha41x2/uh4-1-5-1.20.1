@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-29T19:09:52.2720278	UH4 1-5/Model Definitions
+// 1.20.1	2024-07-31T16:27:12.3949538	UH4 1-5/Model Definitions
 7adb752e4eb4bc8f228295bcbba7500d39739f95 assets\uh4-5\models\item\glitchtenite_helmet_gold_trim.json
 83b1aabd001a26bab4c0d74fb0de85ac86c44300 assets\uh4-5\models\item\glitchtenite_leggings_quartz_trim.json
 c39c7b702d8f778731d97fdbf9d85fea341d06e5 assets\uh4-5\models\item\glitchtenite_boots_quartz_trim.json
@@ -10,14 +10,17 @@ c5e8b5646d22356617a947e786f01d4690d854df assets\uh4-5\models\item\glitchtenite_c
 367dfdd5f8243020830dc327f1da4120a58046ba assets\uh4-5\models\item\glitchtenite_boots_lapis_trim.json
 b57c5e04cfdfbc3654ff907db90e3ad47142adfd assets\uh4-5\models\item\glitchtenite_boots.json
 e48948b6ce86576f0be27ec28580c231e7815efc assets\uh4-5\models\item\glitchtenite_helmet_lapis_trim.json
+3095a29a419014d0fde661f88234ec3439ac837e assets\uh4-5\models\item\the_gatekeeper_music_disk.json
 bcac8853e4c334b405c8951b1ed0f7d7b73aa4d8 assets\uh4-5\models\block\glitchtenite_block.json
 cb5e406241776ccd18499698121ba3db38b16cdd assets\uh4-5\models\item\glitchtenite_block.json
 ab0db58640faf25eddd6dd173c241a40832eb865 assets\uh4-5\blockstates\strange_bush.json
+340ad5a0cdde3e392222cb51e713cf54d3417a02 assets\uh4-5\models\item\the_gatekeeper_phase_2_music_disk.json
 840ba9a450810dc244e902467bbbd29d8d07389f assets\uh4-5\blockstates\potted_strange_bush.json
 cdbbb053b0e11b50fdea6ecc0037396124f576bc assets\uh4-5\models\item\glitchtenite_helmet_iron_trim.json
-c4b2d48f18abf47381674e4f3494ace48e76d077 assets\uh4-5\models\item\glitchtenite_boots_diamond_trim.json
 0747e38b79411e8cbd76f2eac70fb6d2a8b1e12b assets\uh4-5\models\item\glitchtenite_leggings_iron_trim.json
+c4b2d48f18abf47381674e4f3494ace48e76d077 assets\uh4-5\models\item\glitchtenite_boots_diamond_trim.json
 ffdd861994cf9485a808e1dd597ce6bdbc790011 assets\uh4-5\blockstates\glitchtenite_block.json
+1a1fd8612ae0de2e9345ec09ee1dfa6843cc690f assets\uh4-5\models\item\main_theme_music_disk.json
 4c7d030199cf71bb4fe379918ac00bfd7512ccbf assets\uh4-5\models\block\raw_glitchtenite_block.json
 9bac9ade728c5f4ef160fb90dbed4f6fc3a76bb0 assets\uh4-5\models\item\glitchtenite_sword.json
 91bca0f95f8f0d632a58874b5741dc235fc5a4fa assets\uh4-5\blockstates\heart_flower.json
@@ -26,8 +29,8 @@ ffdd861994cf9485a808e1dd597ce6bdbc790011 assets\uh4-5\blockstates\glitchtenite_b
 3bd42b03389aaf43b284f7c06f32a67eb8f78111 assets\uh4-5\models\item\glitchtenite_chestplate_copper_trim.json
 11bc446b8dc74e2b03fb188262ed888598f994d6 assets\uh4-5\models\item\glitchtenite_pickaxe.json
 a3860474d336b904ab4e3f4f802c4f97502de1a7 assets\uh4-5\models\item\strange_bush.json
-05366be8350da620bed90266c1593dc48e42ad52 assets\uh4-5\models\item\glitchtenite_leggings_diamond_trim.json
 b8e200065fecd061674475815628e49b171e52f5 assets\uh4-5\blockstates\corrupted_ice.json
+05366be8350da620bed90266c1593dc48e42ad52 assets\uh4-5\models\item\glitchtenite_leggings_diamond_trim.json
 e0207a767573ffdce026a4e0f0b02df5bfc0fa86 assets\uh4-5\models\item\glitchtenite_helmet_quartz_trim.json
 458512aa50cf85db1919fad438281a6656dca76d assets\uh4-5\models\item\heart_flower.json
 f2fe7e07f555e3b7067a47aec07ae00033616495 assets\uh4-5\models\item\glitchtenite_boots_gold_trim.json
@@ -65,9 +68,9 @@ da7efa858a64a4e30214f4ccd46860640adb1133 assets\uh4-5\models\item\glitchtenite_h
 1ae31104650007820c54f756699cab9941f3f18b assets\uh4-5\models\item\glitchtenite_boots_amethyst_trim.json
 f949fe954f32c5e2d505cbde7c283778ee4e52de assets\uh4-5\models\item\poisonous_berry.json
 5a267eaa4e5f28e79aae3f909c7b4fb34136c724 assets\uh4-5\models\item\glitchtenite_chestplate_diamond_trim.json
-b54f14ee6eea976fa0d6204d7ede71200c6b8096 assets\uh4-5\models\item\raw_glitchtenite_block.json
 d8fc57bbe6364e87053717c31e09f386f5056ba1 assets\uh4-5\models\item\glitchtenite_chestplate_lapis_trim.json
+b54f14ee6eea976fa0d6204d7ede71200c6b8096 assets\uh4-5\models\item\raw_glitchtenite_block.json
 124601094918405c1bb912a40493c1698fb4a142 assets\uh4-5\models\item\glitchtenite_chestplate_redstone_trim.json
 b8b7e542079151ac8dbe35b90914cf92a33676d1 assets\uh4-5\models\item\glitchtenite_helmet_diamond_trim.json
-4c73cbf6ec5b4006a5e9cede69f7ff337e293f48 assets\uh4-5\models\item\glitchtenite_chestplate_amethyst_trim.json
 566ab47f13589c031ff0d7d0ad6d5e5d7b620e8b assets\uh4-5\models\block\potted_heart_flower.json
+4c73cbf6ec5b4006a5e9cede69f7ff337e293f48 assets\uh4-5\models\item\glitchtenite_chestplate_amethyst_trim.json

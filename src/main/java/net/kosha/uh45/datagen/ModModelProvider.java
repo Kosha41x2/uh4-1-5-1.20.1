@@ -39,6 +39,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GLITCHTENITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CORRUPTED_GRAPE, Models.GENERATED);
         itemModelGenerator.register(ModItems.POISONOUS_BERRY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UH4_OST_MAIN_THEME_MUSIC_DISK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2, Models.GENERATED);
+
 
         itemModelGenerator.registerArmor((ArmorItem) ModItems.GLITCHTENITE_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.GLITCHTENITE_CHESTPLATE);

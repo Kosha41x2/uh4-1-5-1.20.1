@@ -5,6 +5,7 @@ import net.kosha.uh45.UH415;
 import net.kosha.uh45.item.custom.GlitchedCrossbowItem;
 import net.kosha.uh45.item.custom.GlitchteniteArmor;
 import net.kosha.uh45.item.custom.ModFoodComponents;
+import net.kosha.uh45.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -26,6 +27,10 @@ public class ModItems {
     public static final Item GLITCHTENITE_BOOTS = registerItem("glitchtenite_boots", new GlitchteniteArmor(ModArmorMaterials.GLITCHTENITE,ArmorItem.Type.BOOTS, new FabricItemSettings(), 1));
     public static final Item CORRUPTED_GRAPE = registerItem("corrupted_grape", new Item(new FabricItemSettings().food(ModFoodComponents.CORRUPTED_GRAPE)));
     public static final Item POISONOUS_BERRY = registerItem("poisonous_berry", new Item(new FabricItemSettings().food(ModFoodComponents.POISONOUS_BERRY)));
+    public static final Item UH4_OST_MAIN_THEME_MUSIC_DISK = registerItem("main_theme_music_disk", new MusicDiscItem(7 , ModSounds.UH4_OST_MAIN_THEME ,new FabricItemSettings().maxCount(1), 101));
+    public static final Item UH4_OST_BATTLE_THE_GATEKEEPER = registerItem("the_gatekeeper_music_disk", new MusicDiscItem(7 , ModSounds.UH4_OST_BATTLE_THE_GATEKEEPER ,new FabricItemSettings().maxCount(1), 108));
+    public static final Item UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2 = registerItem("the_gatekeeper_phase_2_music_disk", new MusicDiscItem(7 , ModSounds.UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2 ,new FabricItemSettings().maxCount(1), 152));
+
 
 
 

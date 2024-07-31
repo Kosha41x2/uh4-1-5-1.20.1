@@ -9,7 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModEffects {
-    public static StatusEffect CORRUPTION_RESISTANCE = registerStatusEffect("corruption_resistance", StatusEffectCategory.BENEFICIAL, 3215610);;
+    public static StatusEffect CORRUPTION_RESISTANCE = registerStatusEffect("corruption_resistance", StatusEffectCategory.BENEFICIAL, 7143677);;
 
     private static StatusEffect registerStatusEffect(String name, StatusEffectCategory statusEffectCategory, int color){
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(UH415.MOD_ID, name),
