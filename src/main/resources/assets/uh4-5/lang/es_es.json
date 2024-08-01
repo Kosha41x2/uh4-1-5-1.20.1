@@ -16,6 +16,8 @@
   "block.uh4-5.raw_glitchtenite_block": "Bloque de glitchtenita cruda",
   "block.uh4-5.glitchtenite_block": "Bloque de glitchtenita",
   "block.uh4-5.corruption_block": "Bloque de corrupción",
+  "block.uh4-5.corrupted_ice": "Hielo corrupto",
+
 
   "block.uh4-5.heart_flower": "Flor Corazón",
   "block.uh4-5.strange_bush": "Arbusto estraño",
@@ -41,6 +43,9 @@
   "item.minecraft.potion.effect.strong_corruption_resistance_potion": "Poción de Anti-Corrupción",
   "item.minecraft.splash_potion.effect.strong_corruption_resistance_potion": "Poción de Anti-Corrupción Arrojadiza",
   "item.minecraft.lingering_potion.effect.strong_corruption_resistance_potion": "Poción de Anti-Corrupción Persistente",
+  "item.minecraft.tipped_arrow.effect.corruption_resistance_potion" : "Flecha de Anti-Corruption",
+  "item.minecraft.tipped_arrow.effect.long_corruption_resistance_potion" : "Flecha de Anti-Corruption",
+  "item.minecraft.tipped_arrow.effect.strong_corruption_resistance_potion" : "Flecha de Anti-Corruption",
 
   "sounds.uh4-5.uh4_ost_main_theme": "Música del tema principal",
   "sounds.uh4-5.uh4_ost_battle_the_gatekeeper" : "Música The Gatekeeper" ,

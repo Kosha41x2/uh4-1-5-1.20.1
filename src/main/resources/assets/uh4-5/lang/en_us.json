@@ -16,6 +16,7 @@
   "block.uh4-5.raw_glitchtenite_block": "Raw glitchtenite block",
   "block.uh4-5.glitchtenite_block": "Glitchtenite block",
   "block.uh4-5.corruption_block": "Corruption block",
+  "block.uh4-5.corrupted_ice": "Corrupted Ice",
 
   "block.uh4-5.heart_flower": "Heart Flower",
   "block.uh4-5.strange_bush": "Strange Bush",
@@ -41,6 +42,11 @@
   "item.minecraft.potion.effect.strong_corruption_resistance_potion": "Anti-Corruption Potion",
   "item.minecraft.splash_potion.effect.strong_corruption_resistance_potion": "Splash Potion of Anti-Corruption",
   "item.minecraft.lingering_potion.effect.strong_corruption_resistance_potion": "Lingering Potion of Anti-Corruption",
+  "item.minecraft.tipped_arrow.effect.corruption_resistance_potion" : "Arrow of Anti-Corruption",
+  "item.minecraft.tipped_arrow.effect.long_corruption_resistance_potion" : "Arrow of Anti-Corruption",
+  "item.minecraft.tipped_arrow.effect.strong_corruption_resistance_potion" : "Arrow of Anti-Corruption",
+
+
 
   "sounds.uh4-5.uh4_ost_main_theme": "Main Theme Music",
   "sounds.uh4-5.uh4_ost_battle_the_gatekeeper" : "The Gatekeeper Music" ,
