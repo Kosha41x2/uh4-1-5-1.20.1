@@ -24,6 +24,8 @@
   "item.uh4-5.corrupted_grape": "Corrupted Grape",
   "item.uh4-5.poisonous_berry": "Poisonous Berry",
 
+  "item.uh4-5.slug_spawn_egg": "Slug Spawn Egg",
+
   "itemgroup.corrupted": "Corrupted",
 
   "death.attack.corruption": "%1$s died from corruption.",

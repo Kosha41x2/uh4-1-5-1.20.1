@@ -2,6 +2,7 @@ package net.kosha.uh45.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.kosha.uh45.UH415;
+import net.kosha.uh45.entity.custom.ModEntities;
 import net.kosha.uh45.item.custom.GlitchedCrossbowItem;
 import net.kosha.uh45.item.custom.GlitchteniteArmor;
 import net.kosha.uh45.item.custom.ModFoodComponents;
@@ -30,7 +31,7 @@ public class ModItems {
     public static final Item UH4_OST_MAIN_THEME_MUSIC_DISK = registerItem("main_theme_music_disk", new MusicDiscItem(7 , ModSounds.UH4_OST_MAIN_THEME ,new FabricItemSettings().maxCount(1), 101));
     public static final Item UH4_OST_BATTLE_THE_GATEKEEPER = registerItem("the_gatekeeper_music_disk", new MusicDiscItem(7 , ModSounds.UH4_OST_BATTLE_THE_GATEKEEPER ,new FabricItemSettings().maxCount(1), 108));
     public static final Item UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2 = registerItem("the_gatekeeper_phase_2_music_disk", new MusicDiscItem(7 , ModSounds.UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2 ,new FabricItemSettings().maxCount(1), 152));
-
+    public static final Item SLUG_SPAWN_EGG = registerItem("slug_spawn_egg", new SpawnEggItem(ModEntities.SLUG, 61909, 16057301,new FabricItemSettings()));
 
 
 

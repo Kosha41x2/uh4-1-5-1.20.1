@@ -2,9 +2,12 @@ package net.kosha.uh45;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.kosha.uh45.block.ModBlocks;
 import net.kosha.uh45.effect.ModEffects;
 import net.kosha.uh45.entity.attribute.ModEntityAttributes;
+import net.kosha.uh45.entity.custom.ModEntities;
+import net.kosha.uh45.entity.custom.SlugEntity;
 import net.kosha.uh45.item.ModItemGroups;
 import net.kosha.uh45.item.ModItems;
 import net.kosha.uh45.potion.ModPotions;
@@ -27,5 +30,8 @@ public class UH415 implements ModInitializer {
 		ModEffects.registerEffects();
 		ModPotions.registerModPotions();
 		ModSounds.registerSounds();
+		ModEntities.registerModEntities();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.SLUG, SlugEntity.createSlugAttributes());
 	}
 }

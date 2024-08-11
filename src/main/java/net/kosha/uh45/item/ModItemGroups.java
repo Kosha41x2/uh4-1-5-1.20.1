@@ -48,6 +48,8 @@ public class ModItemGroups {
                         entries.add(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER);
                         entries.add(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2);
 
+                        entries.add(ModItems.SLUG_SPAWN_EGG);
+
 
                     }).build());
 
@@ -60,6 +62,8 @@ public class ModItemGroups {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItemGroups::addItemsToTabTools);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItemGroups::addItemsToTabFoodAndDrink);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItemGroups::addItemsToTabNatural);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(ModItemGroups::addItemsToTabSpawnEggs);
+
 
     }
 
@@ -109,5 +113,9 @@ public class ModItemGroups {
     private static void addItemsToTabNatural(FabricItemGroupEntries entries){
         entries.add(ModBlocks.HEART_FLOWER);
         entries.add(ModBlocks.STRANGE_BUSH);
+    }
+
+    private static void addItemsToTabSpawnEggs(FabricItemGroupEntries entries){
+        entries.add(ModItems.SLUG_SPAWN_EGG);
     }
 }

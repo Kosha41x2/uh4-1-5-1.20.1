@@ -8,10 +8,13 @@ import net.kosha.uh45.item.custom.CrossbowLikeItem;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -42,6 +45,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UH4_OST_MAIN_THEME_MUSIC_DISK, Models.GENERATED);
         itemModelGenerator.register(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER, Models.GENERATED);
         itemModelGenerator.register(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SLUG_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
 
         itemModelGenerator.registerArmor((ArmorItem) ModItems.GLITCHTENITE_HELMET);
