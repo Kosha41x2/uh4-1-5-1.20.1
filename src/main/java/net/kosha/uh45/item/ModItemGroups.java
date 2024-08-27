@@ -49,6 +49,8 @@ public class ModItemGroups {
                         entries.add(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2);
 
                         entries.add(ModItems.SLUG_SPAWN_EGG);
+                        entries.add(ModItems.AMALGAM_SPAWN_EGG);
+                        entries.add(ModItems.GLITCHTENITE_GOLEM_SPAWN_EGG);
 
 
                     }).build());
@@ -117,5 +119,7 @@ public class ModItemGroups {
 
     private static void addItemsToTabSpawnEggs(FabricItemGroupEntries entries){
         entries.add(ModItems.SLUG_SPAWN_EGG);
+        entries.add(ModItems.AMALGAM_SPAWN_EGG);
+        entries.add(ModItems.GLITCHTENITE_GOLEM_SPAWN_EGG);
     }
 }

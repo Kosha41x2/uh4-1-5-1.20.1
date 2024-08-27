@@ -1,10 +1,11 @@
-// 1.20.1	2024-08-06T17:42:37.3393972	UH4 1-5/Model Definitions
+// 1.20.1	2024-08-15T15:54:38.596761	UH4 1-5/Model Definitions
 7adb752e4eb4bc8f228295bcbba7500d39739f95 assets\uh4-5\models\item\glitchtenite_helmet_gold_trim.json
 83b1aabd001a26bab4c0d74fb0de85ac86c44300 assets\uh4-5\models\item\glitchtenite_leggings_quartz_trim.json
 c39c7b702d8f778731d97fdbf9d85fea341d06e5 assets\uh4-5\models\item\glitchtenite_boots_quartz_trim.json
 6b93f6a37452be896128834a38f15967cbe9df68 assets\uh4-5\models\item\glitchtenite_helmet_copper_trim.json
 6363be20c9cb471bd26278d9fd688e1b1181210d assets\uh4-5\models\item\glitchtenite_chestplate.json
 c5e8b5646d22356617a947e786f01d4690d854df assets\uh4-5\models\item\glitchtenite_chestplate_quartz_trim.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\uh4-5\models\item\amalgam_spawn_egg.json
 604ca7b9655d0002055796397bb9ed8d4693e039 assets\uh4-5\models\item\raw_glitchtenite.json
 93e1ee47de572e2a798dac70d179da48a0303fff assets\uh4-5\models\item\glitchtenite_axe.json
 367dfdd5f8243020830dc327f1da4120a58046ba assets\uh4-5\models\item\glitchtenite_boots_lapis_trim.json
@@ -29,8 +30,8 @@ ffdd861994cf9485a808e1dd597ce6bdbc790011 assets\uh4-5\blockstates\glitchtenite_b
 3bd42b03389aaf43b284f7c06f32a67eb8f78111 assets\uh4-5\models\item\glitchtenite_chestplate_copper_trim.json
 11bc446b8dc74e2b03fb188262ed888598f994d6 assets\uh4-5\models\item\glitchtenite_pickaxe.json
 a3860474d336b904ab4e3f4f802c4f97502de1a7 assets\uh4-5\models\item\strange_bush.json
-05366be8350da620bed90266c1593dc48e42ad52 assets\uh4-5\models\item\glitchtenite_leggings_diamond_trim.json
 b8e200065fecd061674475815628e49b171e52f5 assets\uh4-5\blockstates\corrupted_ice.json
+05366be8350da620bed90266c1593dc48e42ad52 assets\uh4-5\models\item\glitchtenite_leggings_diamond_trim.json
 e0207a767573ffdce026a4e0f0b02df5bfc0fa86 assets\uh4-5\models\item\glitchtenite_helmet_quartz_trim.json
 458512aa50cf85db1919fad438281a6656dca76d assets\uh4-5\models\item\heart_flower.json
 f2fe7e07f555e3b7067a47aec07ae00033616495 assets\uh4-5\models\item\glitchtenite_boots_gold_trim.json

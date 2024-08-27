@@ -6,7 +6,9 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.kosha.uh45.block.ModBlocks;
 import net.kosha.uh45.effect.ModEffects;
 import net.kosha.uh45.entity.attribute.ModEntityAttributes;
-import net.kosha.uh45.entity.custom.ModEntities;
+import net.kosha.uh45.entity.ModEntities;
+import net.kosha.uh45.entity.custom.AmalgamEntity;
+import net.kosha.uh45.entity.custom.GlitchteniteGolemEntity;
 import net.kosha.uh45.entity.custom.SlugEntity;
 import net.kosha.uh45.item.ModItemGroups;
 import net.kosha.uh45.item.ModItems;
@@ -33,5 +35,7 @@ public class UH415 implements ModInitializer {
 		ModEntities.registerModEntities();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.SLUG, SlugEntity.createSlugAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.AMALGAM, AmalgamEntity.createAmalgamAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.GLITCHTENITE_GOLEM	, GlitchteniteGolemEntity.createGlitchteniteGolemAttributes());
 	}
 }

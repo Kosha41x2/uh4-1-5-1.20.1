@@ -25,6 +25,14 @@
   "item.uh4-5.poisonous_berry": "Poisonous Berry",
 
   "item.uh4-5.slug_spawn_egg": "Slug Spawn Egg",
+  "item.uh4-5.amalgam_spawn_egg": "Amalgam Spawn Egg",
+  "item.uh4-5.glitchtenite_golem_spawn_egg": "Glitchtenite Golem Spawn Egg",
+
+
+
+  "entity.uh4-5.slug": "Slug",
+  "entity.uh4-5.amalgam": "Amalgam",
+  "entity.uh4-5.glitchtenite_golem": "Glitchtenite Golem",
 
   "itemgroup.corrupted": "Corrupted",
 

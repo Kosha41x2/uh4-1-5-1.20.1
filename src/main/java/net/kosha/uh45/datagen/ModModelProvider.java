@@ -47,6 +47,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLUG_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.AMALGAM_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.GLITCHTENITE_GOLEM_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
 
         itemModelGenerator.registerArmor((ArmorItem) ModItems.GLITCHTENITE_HELMET);

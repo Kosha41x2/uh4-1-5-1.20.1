@@ -1,13 +1,11 @@
 package net.kosha.uh45.entity.client;
 
-import net.kosha.uh45.entity.animation.ModAnimations;
+import net.kosha.uh45.entity.animation.ModSlugAnimations;
 import net.kosha.uh45.entity.custom.SlugEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 
 public class SlugModel<T extends SlugEntity> extends SinglePartEntityModel<T> {
@@ -57,9 +55,9 @@ public class SlugModel<T extends SlugEntity> extends SinglePartEntityModel<T> {
 	public void setAngles(SlugEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 		this.getPart().traverse().forEach(ModelPart::resetTransform);
 		this.setHeadAngles(netHeadYaw, headPitch);
-		this.animateMovement(ModAnimations.WALK, limbSwing, limbSwingAmount, 10f, 15f);
-		this.updateAnimation(entity.idleAnimationState, ModAnimations.IDLE, ageInTicks, 1f);
-		this.updateAnimation(entity.attackAnimationState, ModAnimations.ATTACK, ageInTicks, 1f);
+		this.animateMovement(ModSlugAnimations.WALK, limbSwing, limbSwingAmount, 10f, 15f);
+		this.updateAnimation(entity.idleAnimationState, ModSlugAnimations.IDLE, ageInTicks, 1f);
+		this.updateAnimation(entity.attackAnimationState, ModSlugAnimations.ATTACK, ageInTicks, 1f);
 	}
 
 	private void setHeadAngles(float headYaw, float headPitch){

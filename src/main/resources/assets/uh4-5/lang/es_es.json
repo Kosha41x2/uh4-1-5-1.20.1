@@ -26,6 +26,14 @@
   "item.uh4-5.poisonous_berry": "Baya Venenosa",
 
   "item.uh4-5.slug_spawn_egg": "Webo Generador de Babosa",
+  "item.uh4-5.amalgam_spawn_egg": "Webo Generador de Amalgama",
+  "item.uh4-5.glitchtenite_golem_spawn_egg": "Webo Generador de Golem de Glitchtenita",
+
+
+  "entity.uh4-5.slug": "Babosa",
+  "entity.uh4-5.amalgam": "Amalgama",
+  "entity.uh4-5.glitchtenite_golem": "Golem de Glitchtenita",
+
 
   "itemgroup.corrupted": "Corrupto",
 

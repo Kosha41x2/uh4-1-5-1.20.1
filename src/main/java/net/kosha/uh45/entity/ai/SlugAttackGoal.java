@@ -62,6 +62,7 @@ public class SlugAttackGoal extends MeleeAttackGoal {
         this.resetAttackCooldown();
         this.mob.swingHand(Hand.MAIN_HAND);
         this.mob.tryAttack(pEnemy);
+        entity.setSlugSize(entity.getSlugSize() + 1, true);
     }
 
     @Override

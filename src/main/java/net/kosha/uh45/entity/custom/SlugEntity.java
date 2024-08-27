@@ -19,6 +19,7 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.ZombifiedPiglinEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.MathHelper;
@@ -27,6 +28,8 @@ import net.minecraft.world.World;
 public class SlugEntity extends HostileEntity {
 
     private static final TrackedData<Integer> SIZE = DataTracker.registerData(SlugEntity.class, TrackedDataHandlerRegistry.INTEGER);
+    private static final int MIN_SIZE_VALUE = 1;
+    private static final int MAX_SIZE_VALUE = 100;
     private static final int INITIAL_SIZE_VALUE = 5;
 
     private static final TrackedData<Boolean> ATTACKING = DataTracker.registerData(SlugEntity.class ,TrackedDataHandlerRegistry.BOOLEAN);
@@ -76,9 +79,9 @@ public class SlugEntity extends HostileEntity {
 
 
 
-    protected SlugEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public SlugEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
-        this.experiencePoints = 3;
+        this.experiencePoints = 2;
         this.setPathfindingPenalty(PathNodeType.WATER, 0.0f);
     }
 
@@ -95,10 +98,10 @@ public class SlugEntity extends HostileEntity {
 
     public static DefaultAttributeContainer.Builder createSlugAttributes(){
         return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 10)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.12f)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, INITIAL_SIZE_VALUE + 5)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, INITIAL_SIZE_VALUE * 0.005f + 0.095f)
                 .add(ModEntityAttributes.GENERIC_CORRUPTION_RESISTANCE, 12)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 2);
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, Math.floor((double) INITIAL_SIZE_VALUE / 5) + 2);
     }
 
     public void setAttacking(boolean attacking){
@@ -137,12 +140,40 @@ public class SlugEntity extends HostileEntity {
     protected void initDataTracker() {
         super.initDataTracker();
         this.dataTracker.startTracking(ATTACKING, false);
-        this.dataTracker.startTracking(SIZE, 5);
+        this.dataTracker.startTracking(SIZE, INITIAL_SIZE_VALUE);
+    }
+
+    @Override
+    public void writeCustomDataToNbt(NbtCompound nbt) {
+        super.writeCustomDataToNbt(nbt);
+        nbt.putInt("Size", this.getSlugSize());
+    }
+
+    @Override
+    public void readCustomDataFromNbt(NbtCompound nbt) {
+        this.setSlugSize(nbt.getInt("Size"), false);
+        super.readCustomDataFromNbt(nbt);
     }
 
     public int getSlugSize() {
         return this.dataTracker.get(SIZE);
     }
+
+    public void setSlugSize(int size, boolean heal) {
+
+        int lastMaxHealth = (int)this.getMaxHealth();
+        int i = MathHelper.clamp(size, MIN_SIZE_VALUE, MAX_SIZE_VALUE);
+        this.dataTracker.set(SIZE, i);
+        this.refreshPosition();
+        this.calculateDimensions();
+        this.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(i + 5);
+        this.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(i * 0.005f + 0.095f);
+        this.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).setBaseValue(Math.floor((double) i / 5) + 2);
+        if(heal){
+            this.heal(this.getMaxHealth() - lastMaxHealth);
+        }
+    }
+
 
     public int getSlugInitailSize() {
         return INITIAL_SIZE_VALUE;
@@ -150,7 +181,7 @@ public class SlugEntity extends HostileEntity {
 
     @Override
     protected float getActiveEyeHeight(EntityPose pose, EntityDimensions dimensions) {
-        return 0.35f * getSlugSize() / INITIAL_SIZE_VALUE;
+        return 0.35f;
     }
     @Override
     protected SoundEvent getHurtSound(DamageSource source) {

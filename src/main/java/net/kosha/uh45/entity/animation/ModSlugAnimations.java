@@ -5,7 +5,7 @@ import net.minecraft.client.render.entity.animation.AnimationHelper;
 import net.minecraft.client.render.entity.animation.Keyframe;
 import net.minecraft.client.render.entity.animation.Transformation;
 
-public class ModAnimations {
+public class ModSlugAnimations {
 
     public static final Animation WALK = Animation.Builder.create(4f).looping()
             .addBoneAnimation("head",
