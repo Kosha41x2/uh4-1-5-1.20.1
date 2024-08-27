@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-15T15:54:38.596761	UH4 1-5/Model Definitions
+// 1.20.1	2024-08-27T17:20:02.825124	UH4 1-5/Model Definitions
 7adb752e4eb4bc8f228295bcbba7500d39739f95 assets\uh4-5\models\item\glitchtenite_helmet_gold_trim.json
 83b1aabd001a26bab4c0d74fb0de85ac86c44300 assets\uh4-5\models\item\glitchtenite_leggings_quartz_trim.json
 c39c7b702d8f778731d97fdbf9d85fea341d06e5 assets\uh4-5\models\item\glitchtenite_boots_quartz_trim.json
@@ -52,6 +52,7 @@ d91aa00db9f17e84ed4e017fae6c2ecf0bd627f7 assets\uh4-5\blockstates\raw_glitchteni
 f58959f14853c4b81683ff0b6cfa41442161f046 assets\uh4-5\models\block\potted_strange_bush.json
 a16fac9d38cf5d8897c21371b134852ec05e309f assets\uh4-5\models\item\glitchtenite_leggings_gold_trim.json
 b3ccdbc0a9e3138e02e0723a6e08b3ba06984b84 assets\uh4-5\models\item\glitchtenite_boots_copper_trim.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\uh4-5\models\item\glitchtenite_golem_spawn_egg.json
 0d34d0a87189dc4130bbe4cb8027fda5b50a5786 assets\uh4-5\models\item\glitchtenite_chestplate_iron_trim.json
 d28722671b268a9a3a72a42d932dec4521190567 assets\uh4-5\models\block\heart_flower.json
 72a69e7e207bd3cf34aa0eb215616b1cdfcc2927 assets\uh4-5\models\item\glitchtenite_boots_iron_trim.json
