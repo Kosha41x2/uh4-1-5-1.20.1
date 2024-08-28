@@ -4,6 +4,9 @@
 
 package net.kosha.uh45.entity.client;
 
+import net.kosha.uh45.entity.animation.ModAmalgamAnimations;
+import net.kosha.uh45.entity.animation.ModGlitchteniteGolemAnimations;
+import net.kosha.uh45.entity.animation.ModSlugAnimations;
 import net.kosha.uh45.entity.custom.GlitchteniteGolemEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
@@ -11,6 +14,7 @@ import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.math.MathHelper;
 
 public class GlitchteniteGolemModel<T extends GlitchteniteGolemEntity> extends SinglePartEntityModel<T> {
 	private final ModelPart glitchtenite_golem;
@@ -76,6 +80,10 @@ public class GlitchteniteGolemModel<T extends GlitchteniteGolemEntity> extends S
 	}
 	@Override
 	public void setAngles(GlitchteniteGolemEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+		this.getPart().traverse().forEach(ModelPart::resetTransform);
+		setHeadAngles(netHeadYaw, headPitch);
+		this.animateMovement(ModGlitchteniteGolemAnimations.GLITCHETENITE_GOLEM_WALK, limbSwing, limbSwingAmount, 2.5f, 2.5f);
+		this.updateAnimation(entity.attackAnimationState, ModGlitchteniteGolemAnimations.GLITCHTENITE_GOLEM_ATTACK, ageInTicks, 1f);
 	}
 	@Override
 	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
@@ -85,5 +93,14 @@ public class GlitchteniteGolemModel<T extends GlitchteniteGolemEntity> extends S
 	@Override
 	public ModelPart getPart() {
 		return glitchtenite_golem;
+	}
+
+
+	private void setHeadAngles(float headYaw, float headPitch){
+		headYaw = MathHelper.clamp(headYaw, -30.0F, 30.0F);
+		headPitch = MathHelper.clamp(headPitch, -25.0F, 45.0F);
+
+		this.head.yaw = headYaw * 0.017453292F;
+		this.head.pitch = headPitch * 0.017453292F;
 	}
 }

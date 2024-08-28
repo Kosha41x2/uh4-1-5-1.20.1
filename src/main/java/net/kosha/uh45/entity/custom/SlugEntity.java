@@ -77,8 +77,6 @@ public class SlugEntity extends HostileEntity {
     }
 
 
-
-
     public SlugEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
         this.experiencePoints = 2;
