@@ -17,6 +17,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.ZombifiedPiglinEntity;
+import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
@@ -85,13 +86,14 @@ public class SlugEntity extends HostileEntity {
 
     @Override
     protected void initGoals() {
+        this.goalSelector.add(0, new FleeEntityGoal<GlitchteniteGolemEntity>(this, GlitchteniteGolemEntity.class, 6.0f, 1.0, 1.2));
         this.goalSelector.add(2, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
         this.goalSelector.add(4, new LookAroundGoal(this));
         this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.8));
         this.goalSelector.add(1, new SlugAttackGoal(this, 1D, true));
         this.targetSelector.add(1, new RevengeGoal(this));
         this.targetSelector.add(2, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, true));
-
+        this.targetSelector.add(3, new ActiveTargetGoal<IronGolemEntity>((MobEntity)this, IronGolemEntity.class, true));
     }
 
     public static DefaultAttributeContainer.Builder createSlugAttributes(){

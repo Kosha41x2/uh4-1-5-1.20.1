@@ -14,6 +14,8 @@ import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.entity.passive.CatEntity;
+import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
 
@@ -88,13 +90,15 @@ public class AmalgamEntity extends HostileEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new AmalgamPounceAtTargetGoal(this, 0.4f));
+        this.goalSelector.add(1, new FleeEntityGoal<GlitchteniteGolemEntity>(this, GlitchteniteGolemEntity.class, 6.0f, 1.0, 1.2));
+        this.goalSelector.add(2, new AmalgamPounceAtTargetGoal(this, 0.4f));
         this.targetSelector.add(1, new RevengeGoal(this));
         this.targetSelector.add(2, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, true));
-        this.goalSelector.add(2, new AmalgamAttackGoal(this, 1D, true));
-        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
-        this.goalSelector.add(5, new LookAroundGoal(this));
-        this.goalSelector.add(4, new WanderAroundFarGoal(this, 0.8));
+        this.targetSelector.add(3, new ActiveTargetGoal<IronGolemEntity>((MobEntity)this, IronGolemEntity.class, true));
+        this.goalSelector.add(3, new AmalgamAttackGoal(this, 1D, true));
+        this.goalSelector.add(4, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
+        this.goalSelector.add(6, new LookAroundGoal(this));
+        this.goalSelector.add(5, new WanderAroundFarGoal(this, 0.8));
     }
 
     public static DefaultAttributeContainer.Builder createAmalgamAttributes(){

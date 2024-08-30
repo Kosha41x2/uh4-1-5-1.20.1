@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-27T17:20:02.825124	UH4 1-5/Model Definitions
+// 1.20.1	2024-08-30T13:11:11.6349234	UH4 1-5/Model Definitions
 7adb752e4eb4bc8f228295bcbba7500d39739f95 assets\uh4-5\models\item\glitchtenite_helmet_gold_trim.json
 83b1aabd001a26bab4c0d74fb0de85ac86c44300 assets\uh4-5\models\item\glitchtenite_leggings_quartz_trim.json
 c39c7b702d8f778731d97fdbf9d85fea341d06e5 assets\uh4-5\models\item\glitchtenite_boots_quartz_trim.json
@@ -30,8 +30,8 @@ ffdd861994cf9485a808e1dd597ce6bdbc790011 assets\uh4-5\blockstates\glitchtenite_b
 3bd42b03389aaf43b284f7c06f32a67eb8f78111 assets\uh4-5\models\item\glitchtenite_chestplate_copper_trim.json
 11bc446b8dc74e2b03fb188262ed888598f994d6 assets\uh4-5\models\item\glitchtenite_pickaxe.json
 a3860474d336b904ab4e3f4f802c4f97502de1a7 assets\uh4-5\models\item\strange_bush.json
-b8e200065fecd061674475815628e49b171e52f5 assets\uh4-5\blockstates\corrupted_ice.json
 05366be8350da620bed90266c1593dc48e42ad52 assets\uh4-5\models\item\glitchtenite_leggings_diamond_trim.json
+b8e200065fecd061674475815628e49b171e52f5 assets\uh4-5\blockstates\corrupted_ice.json
 e0207a767573ffdce026a4e0f0b02df5bfc0fa86 assets\uh4-5\models\item\glitchtenite_helmet_quartz_trim.json
 458512aa50cf85db1919fad438281a6656dca76d assets\uh4-5\models\item\heart_flower.json
 f2fe7e07f555e3b7067a47aec07ae00033616495 assets\uh4-5\models\item\glitchtenite_boots_gold_trim.json
