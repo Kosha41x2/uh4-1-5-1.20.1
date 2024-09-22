@@ -21,6 +21,8 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends FabricRecipeProvider {
 
     private static final List<ItemConvertible> TO_GET_GLITHCTENITE_INGOT = List.of(ModItems.RAW_GLITCHTENITE);
+    private static final List<ItemConvertible> TO_GET_BUGGED_STONE = List.of(ModBlocks.BUGGED_COBBLESTONE);
+    private static final List<ItemConvertible> TO_GET_CRIMSON_STONE = List.of(ModBlocks.CRIMSON_COBBLESTONE);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -29,6 +31,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         offerSmelting(exporter, TO_GET_GLITHCTENITE_INGOT, RecipeCategory.MISC, ModItems.GLITCHTENITE_INGOT, 0.7f, 200, "glitchtenite");
+        offerSmelting(exporter, TO_GET_BUGGED_STONE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BUGGED_STONE, 0.7f, 200, "stone");
+        offerSmelting(exporter, TO_GET_CRIMSON_STONE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_STONE, 0.7f, 200, "stone");
+
         offerBlasting(exporter, TO_GET_GLITHCTENITE_INGOT, RecipeCategory.MISC, ModItems.GLITCHTENITE_INGOT, 0.7f, 100, "glitchtenite");
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.GLITCHTENITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.GLITCHTENITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_GLITCHTENITE, RecipeCategory.DECORATIONS, ModBlocks.RAW_GLITCHTENITE_BLOCK);
@@ -94,5 +99,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
         offerSingleOutputShapelessRecipe(exporter, Items.RED_DYE, ModBlocks.HEART_FLOWER, "flower_dyes");
         offerSingleOutputShapelessRecipe(exporter, Items.CYAN_DYE, ModBlocks.STRANGE_BUSH, "flower_dyes");
+
     }
 }

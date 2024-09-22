@@ -3,6 +3,7 @@ package net.kosha.uh45.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kosha.uh45.UH415;
+import net.kosha.uh45.block.custom.BuggedGrassBlock;
 import net.kosha.uh45.block.custom.CorruptedIce;
 import net.kosha.uh45.block.custom.CorruptionBlock;
 import net.kosha.uh45.effect.ModEffects;
@@ -16,6 +17,24 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+
+    public static final Block BUGGED_GRASS_BLOCK = registerBlock("bugged_grass_block",
+            new BuggedGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK).mapColor(MapColor.LAPIS_BLUE)));
+
+    public static final Block BUGGED_DIRT = registerBlock("bugged_dirt",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIRT).mapColor(MapColor.GRAY)));
+
+    public static final Block BUGGED_COBBLESTONE = registerBlock("bugged_cobblestone",
+            new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).mapColor(MapColor.CYAN).strength(1.4f, 4.0f)));
+
+    public static final Block BUGGED_STONE = registerBlock("bugged_stone",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.GRAY).strength(1.1f, 4.0f)));
+
+    public static final Block CRIMSON_COBBLESTONE = registerBlock("crimson_cobblestone",
+            new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).mapColor(MapColor.DARK_RED).strength(2.0f, 14.0f)));
+
+    public static final Block CRIMSON_STONE = registerBlock("crimson_stone",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DARK_RED).strength(1.5f, 14.0f)));
 
     public static final Block RAW_GLITCHTENITE_BLOCK = registerBlock("raw_glitchtenite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.LAPIS_BLUE)));

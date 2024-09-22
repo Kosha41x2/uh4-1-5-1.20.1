@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "uh4-5:block/bugged_dirt",
+    "top": "uh4-5:block/bugged_grass_block_top",
+    "side": "uh4-5:block/bugged_grass_block_side"
+  }
+}

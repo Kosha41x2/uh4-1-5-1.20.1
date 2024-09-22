@@ -21,6 +21,13 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_GLITCHTENITE);
                         entries.add(ModItems.GLITCHTENITE_INGOT);
 
+                        entries.add(ModBlocks.BUGGED_GRASS_BLOCK);
+                        entries.add(ModBlocks.BUGGED_DIRT);
+                        entries.add(ModBlocks.BUGGED_STONE);
+                        entries.add(ModBlocks.BUGGED_COBBLESTONE);
+                        entries.add(ModBlocks.CRIMSON_STONE);
+                        entries.add(ModBlocks.CRIMSON_COBBLESTONE);
+
                         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
                         entries.add(ModBlocks.GLITCHTENITE_BLOCK);
                         entries.add(ModBlocks.CORRUPTION_BLOCK);
@@ -73,6 +80,13 @@ public class ModItemGroups {
 
     //Add these to the building blocks group
     private static void addBlocksToTabBlocks(FabricItemGroupEntries entries){
+        entries.add(ModBlocks.BUGGED_GRASS_BLOCK);
+        entries.add(ModBlocks.BUGGED_DIRT);
+        entries.add(ModBlocks.BUGGED_STONE);
+        entries.add(ModBlocks.BUGGED_COBBLESTONE);
+        entries.add(ModBlocks.CRIMSON_STONE);
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE);
+
         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
         entries.add(ModBlocks.GLITCHTENITE_BLOCK);
         entries.add(ModBlocks.CORRUPTION_BLOCK);

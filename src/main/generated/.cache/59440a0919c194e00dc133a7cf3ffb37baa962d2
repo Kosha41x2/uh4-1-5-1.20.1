@@ -1,5 +1,8 @@
-// 1.20.1	2024-08-30T13:11:11.6299372	UH4 1-5/Block Loot Tables
+// 1.20.1	2024-09-12T17:09:28.9401087	UH4 1-5/Block Loot Tables
 28c36b9e9654551a465b2f28f781716700fc5774 data\uh4-5\loot_tables\blocks\corruption_block.json
+9e3fd9728f0dd4429b5ae711ed66d0ff7f762c84 data\uh4-5\loot_tables\blocks\bugged_dirt.json
+5da3b54ea3da547b34b5baaa6190fdefe3db5fb9 data\uh4-5\loot_tables\blocks\crimson_cobblestone.json
+711d9e3f300d90d0848cb2fa70b2cf48354d0c94 data\uh4-5\loot_tables\blocks\bugged_cobblestone.json
 ae188ddde8920713d626dfb0ab41c71a59688004 data\uh4-5\loot_tables\blocks\potted_strange_bush.json
 3db34ec0ffa59c90ef6a30a030a7d5ac209eba15 data\uh4-5\loot_tables\blocks\glitchtenite_block.json
 f15174556cba989d05cb2d1f3142bcd8b3d04dfb data\uh4-5\loot_tables\blocks\strange_bush.json

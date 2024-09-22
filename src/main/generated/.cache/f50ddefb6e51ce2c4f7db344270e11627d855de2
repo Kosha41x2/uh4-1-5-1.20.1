@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-30T13:11:11.6369182	UH4 1-5/Recipes
+// 1.20.1	2024-09-12T17:09:28.9440968	UH4 1-5/Recipes
 69a8b92fa41494636e300bad32d847f6cc5e3a9a data\uh4-5\recipes\red_dye_from_heart_flower.json
 2b2bed24636a1d4adbd54b1c4ee0eb18f6f0a630 data\uh4-5\advancements\recipes\tools\glitchtenite_pickaxe.json
 f16908702fa870b84c90ed03514f9256fcbff8d7 data\uh4-5\advancements\recipes\misc\glitchtenite_ingot_from_smelting_raw_glitchtenite.json
@@ -18,15 +18,19 @@ ae948fcc7b3e60baaf25f1286617f17165fc461f data\uh4-5\recipes\corruption_block.jso
 6489c8030bad79d1d71bf145e609797ef9043bdf data\uh4-5\advancements\recipes\building_blocks\glitchtenite_ingot.json
 ac9be3ede7e5171a7fd422e8465f9cd6e6450507 data\uh4-5\recipes\glitched_crossbow.json
 ff92554191b1992a1ff95c1320c8bb4e4d37292b data\uh4-5\advancements\recipes\tools\glitchtenite_hoe.json
+c1d1b51efaf6e06001a7184876cb1ed4c7934742 data\uh4-5\recipes\crimson_stone_from_smelting_crimson_cobblestone.json
 153b3182ebaeafa47b5f58eaf6fc1058624ec332 data\uh4-5\advancements\recipes\building_blocks\corrupted_ice.json
 5b67c14991e1c19e715835f6ab421675a7878bda data\uh4-5\advancements\recipes\building_blocks\raw_glitchtenite.json
 7d02f4397e31cad5220c0db59e0a124bd3448af4 data\uh4-5\recipes\raw_glitchtenite.json
 9329c0230447fbc0119ddc164e710972b1f02f1f data\uh4-5\advancements\recipes\misc\cyan_dye_from_strange_bush.json
+4a5ed6525868976f1afa99f72579318c3511c0c1 data\uh4-5\recipes\bugged_stone_from_smelting_bugged_cobblestone.json
 711ad4f517bb3941a2c09faf37b13fe5049ae7a1 data\uh4-5\advancements\recipes\decorations\raw_glitchtenite_block.json
 df9a95a1aa6808c062206d145933085d9f79a66e data\uh4-5\recipes\glitchtenite_ingot.json
 8f24c9b1236c3f3ce539926f18f61121e6e87250 data\uh4-5\recipes\cyan_dye_from_strange_bush.json
-d62831a3da6043d1ca7e2e6d16901c4fcade7818 data\uh4-5\recipes\glitchtenite_block.json
 e964d20906259eb1066da2503345edb37ffc1924 data\uh4-5\recipes\glitchtenite_axe.json
+d62831a3da6043d1ca7e2e6d16901c4fcade7818 data\uh4-5\recipes\glitchtenite_block.json
+0800a58736ffb550e09754d95f912b3ef22fe380 data\uh4-5\advancements\recipes\building_blocks\bugged_stone_from_smelting_bugged_cobblestone.json
+292165744940c46f5990eff2163c1654cfc6278a data\uh4-5\advancements\recipes\building_blocks\crimson_stone_from_smelting_crimson_cobblestone.json
 c35c427c03bab850dbabd1f58b688dafd5d4a04f data\uh4-5\advancements\recipes\tools\glitchtenite_shovel.json
 bad7be65691d974032bdedaad7abc528f472aef8 data\uh4-5\advancements\recipes\building_blocks\corruption_block.json
 a446f9eb5eddf32dd3e1621a6b7abc2a9e30462b data\uh4-5\advancements\recipes\tools\glitchtenite_axe.json
