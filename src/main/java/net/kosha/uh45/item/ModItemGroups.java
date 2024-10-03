@@ -24,9 +24,46 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BUGGED_GRASS_BLOCK);
                         entries.add(ModBlocks.BUGGED_DIRT);
                         entries.add(ModBlocks.BUGGED_STONE);
+
+                        entries.add(ModBlocks.BUGGED_STONE_STAIRS);
+                        entries.add(ModBlocks.BUGGED_STONE_SLAB);
+                        entries.add(ModBlocks.BUGGED_STONE_WALL);
+                        entries.add(ModBlocks.BUGGED_STONE_BUTTON);
+                        entries.add(ModBlocks.BUGGED_STONE_PRESSURE_PLATE);
+
                         entries.add(ModBlocks.BUGGED_COBBLESTONE);
+
+                        entries.add(ModBlocks.BUGGED_COBBLESTONE_STAIRS);
+                        entries.add(ModBlocks.BUGGED_COBBLESTONE_SLAB);
+                        entries.add(ModBlocks.BUGGED_COBBLESTONE_WALL);
+                        entries.add(ModBlocks.BUGGED_COBBLESTONE_BUTTON);
+                        entries.add(ModBlocks.BUGGED_COBBLESTONE_PRESSURE_PLATE);
+
                         entries.add(ModBlocks.CRIMSON_STONE);
+
+                        entries.add(ModBlocks.CRIMSON_STONE_STAIRS);
+                        entries.add(ModBlocks.CRIMSON_STONE_SLAB);
+                        entries.add(ModBlocks.CRIMSON_STONE_WALL);
+                        entries.add(ModBlocks.CRIMSON_STONE_BUTTON);
+                        entries.add(ModBlocks.CRIMSON_STONE_PRESSURE_PLATE);
+
                         entries.add(ModBlocks.CRIMSON_COBBLESTONE);
+
+                        entries.add(ModBlocks.CRIMSON_COBBLESTONE_STAIRS);
+                        entries.add(ModBlocks.CRIMSON_COBBLESTONE_SLAB);
+                        entries.add(ModBlocks.CRIMSON_COBBLESTONE_WALL);
+                        entries.add(ModBlocks.CRIMSON_COBBLESTONE_BUTTON);
+                        entries.add(ModBlocks.CRIMSON_COBBLESTONE_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.BUGGED_COAL_ORE);
+                        entries.add(ModBlocks.BUGGED_IRON_ORE);
+                        entries.add(ModBlocks.BUGGED_LAPIS_ORE);
+                        entries.add(ModBlocks.BUGGED_GLITCHTENITE_ORE);
+                        entries.add(ModBlocks.CRIMSON_COAL_ORE);
+                        entries.add(ModBlocks.CRIMSON_IRON_ORE);
+                        entries.add(ModBlocks.CRIMSON_LAPIS_ORE);
+                        entries.add(ModBlocks.CRIMSON_GLITCHTENITE_ORE);
+
 
                         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
                         entries.add(ModBlocks.GLITCHTENITE_BLOCK);
@@ -83,9 +120,46 @@ public class ModItemGroups {
         entries.add(ModBlocks.BUGGED_GRASS_BLOCK);
         entries.add(ModBlocks.BUGGED_DIRT);
         entries.add(ModBlocks.BUGGED_STONE);
+
+        entries.add(ModBlocks.BUGGED_STONE_STAIRS);
+        entries.add(ModBlocks.BUGGED_STONE_SLAB);
+        entries.add(ModBlocks.BUGGED_STONE_WALL);
+        entries.add(ModBlocks.BUGGED_STONE_BUTTON);
+        entries.add(ModBlocks.BUGGED_STONE_PRESSURE_PLATE);
+
         entries.add(ModBlocks.BUGGED_COBBLESTONE);
+
+        entries.add(ModBlocks.BUGGED_COBBLESTONE_STAIRS);
+        entries.add(ModBlocks.BUGGED_COBBLESTONE_SLAB);
+        entries.add(ModBlocks.BUGGED_COBBLESTONE_WALL);
+        entries.add(ModBlocks.BUGGED_COBBLESTONE_BUTTON);
+        entries.add(ModBlocks.BUGGED_COBBLESTONE_PRESSURE_PLATE);
+
         entries.add(ModBlocks.CRIMSON_STONE);
+
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE_STAIRS);
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE_SLAB);
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE_WALL);
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE_BUTTON);
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE_PRESSURE_PLATE);
+
         entries.add(ModBlocks.CRIMSON_COBBLESTONE);
+
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE_STAIRS);
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE_SLAB);
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE_WALL);
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE_BUTTON);
+        entries.add(ModBlocks.CRIMSON_COBBLESTONE_PRESSURE_PLATE);
+
+
+        entries.add(ModBlocks.BUGGED_COAL_ORE);
+        entries.add(ModBlocks.BUGGED_IRON_ORE);
+        entries.add(ModBlocks.BUGGED_LAPIS_ORE);
+        entries.add(ModBlocks.BUGGED_GLITCHTENITE_ORE);
+        entries.add(ModBlocks.CRIMSON_COAL_ORE);
+        entries.add(ModBlocks.CRIMSON_IRON_ORE);
+        entries.add(ModBlocks.CRIMSON_LAPIS_ORE);
+        entries.add(ModBlocks.CRIMSON_GLITCHTENITE_ORE);
 
         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
         entries.add(ModBlocks.GLITCHTENITE_BLOCK);

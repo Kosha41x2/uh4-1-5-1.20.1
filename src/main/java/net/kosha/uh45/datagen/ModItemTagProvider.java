@@ -19,14 +19,16 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.GLITCHTENITE_HELMET, ModItems.GLITCHTENITE_HELMET, ModItems.GLITCHTENITE_BOOTS, ModItems.GLITCHTENITE_CHESTPLATE);
+
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
                 .add(ModItems.UH4_OST_MAIN_THEME_MUSIC_DISK)
                 .add(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER)
                 .add(ModItems.UH4_OST_BATTLE_THE_GATEKEEPER_PHASE_2);
+
         getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
-                .add(ModBlocks.CRIMSON_STONE.getLootTableId())
-                .add(ModBlocks.BUGGED_COBBLESTONE.getLootTableId())
-                .add(ModBlocks.CRIMSON_COBBLESTONE.getLootTableId())
-                .add(ModBlocks.BUGGED_STONE.getLootTableId());
+                .add(ModBlocks.CRIMSON_STONE.asItem())
+                .add(ModBlocks.BUGGED_COBBLESTONE.asItem())
+                .add(ModBlocks.CRIMSON_COBBLESTONE.asItem())
+                .add(ModBlocks.BUGGED_STONE.asItem());
     }
 }

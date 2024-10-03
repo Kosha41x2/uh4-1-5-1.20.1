@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "uh4-5:block/bugged_cobblestone_slab"
+    },
+    "type=double": {
+      "model": "uh4-5:block/bugged_cobblestone"
+    },
+    "type=top": {
+      "model": "uh4-5:block/bugged_cobblestone_slab_top"
+    }
+  }
+}

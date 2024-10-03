@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "uh4-5:bugged_cobblestone_wall",
+    "uh4-5:bugged_stone_wall",
+    "uh4-5:crimson_cobblestone_wall",
+    "uh4-5:crimson_stone_wall"
+  ]
+}

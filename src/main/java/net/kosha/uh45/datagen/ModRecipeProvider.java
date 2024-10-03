@@ -13,6 +13,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 
 import java.util.List;
@@ -24,6 +25,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> TO_GET_BUGGED_STONE = List.of(ModBlocks.BUGGED_COBBLESTONE);
     private static final List<ItemConvertible> TO_GET_CRIMSON_STONE = List.of(ModBlocks.CRIMSON_COBBLESTONE);
 
+    private static final List<ItemConvertible> TO_GET_RAW_GLITCHTENITE = List.of(ModBlocks.CRIMSON_GLITCHTENITE_ORE, ModBlocks.BUGGED_GLITCHTENITE_ORE);
+    private static final List<ItemConvertible> TO_GET_RAW_IRON = List.of(ModBlocks.CRIMSON_IRON_ORE, ModBlocks.BUGGED_IRON_ORE);
+    private static final List<ItemConvertible> TO_GET_COAL = List.of(ModBlocks.CRIMSON_COAL_ORE, ModBlocks.BUGGED_COAL_ORE);
+    private static final List<ItemConvertible> TO_GET_LAPIS = List.of(ModBlocks.CRIMSON_LAPIS_ORE, ModBlocks.BUGGED_LAPIS_ORE);
+
+
+
+
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
     }
@@ -33,6 +42,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(exporter, TO_GET_GLITHCTENITE_INGOT, RecipeCategory.MISC, ModItems.GLITCHTENITE_INGOT, 0.7f, 200, "glitchtenite");
         offerSmelting(exporter, TO_GET_BUGGED_STONE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BUGGED_STONE, 0.7f, 200, "stone");
         offerSmelting(exporter, TO_GET_CRIMSON_STONE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_STONE, 0.7f, 200, "stone");
+
+        offerSmelting(exporter, TO_GET_RAW_GLITCHTENITE, RecipeCategory.MISC, ModItems.RAW_GLITCHTENITE, 1.4f, 200, "ores");
+        offerSmelting(exporter, TO_GET_RAW_IRON, RecipeCategory.MISC, Items.RAW_IRON, 0.7f, 200, "ores");
+        offerSmelting(exporter, TO_GET_COAL, RecipeCategory.MISC, Items.COAL, 0.7f, 200, "ores");
+        offerSmelting(exporter, TO_GET_LAPIS, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.7f, 200, "ores");
+
+        offerBlasting(exporter, TO_GET_RAW_GLITCHTENITE, RecipeCategory.MISC, ModItems.RAW_GLITCHTENITE, 1.4f, 100, "ores");
+        offerBlasting(exporter, TO_GET_RAW_IRON, RecipeCategory.MISC, Items.RAW_IRON, 0.7f, 100, "ores");
+        offerBlasting(exporter, TO_GET_COAL, RecipeCategory.MISC, Items.COAL, 0.7f, 100, "ores");
+        offerBlasting(exporter, TO_GET_LAPIS, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.7f, 100, "ores");
+
+
 
         offerBlasting(exporter, TO_GET_GLITHCTENITE_INGOT, RecipeCategory.MISC, ModItems.GLITCHTENITE_INGOT, 0.7f, 100, "glitchtenite");
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.GLITCHTENITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.GLITCHTENITE_BLOCK);
@@ -100,5 +121,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSingleOutputShapelessRecipe(exporter, Items.RED_DYE, ModBlocks.HEART_FLOWER, "flower_dyes");
         offerSingleOutputShapelessRecipe(exporter, Items.CYAN_DYE, ModBlocks.STRANGE_BUSH, "flower_dyes");
 
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BUGGED_COBBLESTONE_SLAB, ModBlocks.BUGGED_COBBLESTONE);
+        offerPressurePlateRecipe(exporter, ModBlocks.BUGGED_COBBLESTONE_PRESSURE_PLATE, ModBlocks.BUGGED_COBBLESTONE);
+        createStairsRecipe( ModBlocks.BUGGED_COBBLESTONE_STAIRS, Ingredient.ofItems(ModBlocks.BUGGED_COBBLESTONE))
+                .criterion("bugged_cobblestone", FabricRecipeProvider.conditionsFromItem(ModBlocks.BUGGED_COBBLESTONE))
+                .offerTo(exporter);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BUGGED_COBBLESTONE_WALL, ModBlocks.BUGGED_COBBLESTONE);
+        offerShapelessRecipe(exporter, ModBlocks.BUGGED_COBBLESTONE_BUTTON, ModBlocks.BUGGED_COBBLESTONE, null, 1);
+
+        // Ofrecer recetas de BUGGED_STONE
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BUGGED_STONE_SLAB, ModBlocks.BUGGED_STONE);
+        offerPressurePlateRecipe(exporter, ModBlocks.BUGGED_STONE_PRESSURE_PLATE, ModBlocks.BUGGED_STONE);
+        createStairsRecipe(ModBlocks.BUGGED_STONE_STAIRS, Ingredient.ofItems(ModBlocks.BUGGED_STONE))
+                .criterion("bugged_stone", FabricRecipeProvider.conditionsFromItem(ModBlocks.BUGGED_STONE))
+                .offerTo(exporter);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BUGGED_STONE_WALL, ModBlocks.BUGGED_STONE);
+        offerShapelessRecipe(exporter, ModBlocks.BUGGED_STONE_BUTTON, ModBlocks.BUGGED_STONE, null, 1);
+
+        // Ofrecer recetas de CRIMSON_COBBLESTONE
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_COBBLESTONE_SLAB, ModBlocks.CRIMSON_COBBLESTONE);
+        offerPressurePlateRecipe(exporter, ModBlocks.CRIMSON_COBBLESTONE_PRESSURE_PLATE, ModBlocks.CRIMSON_COBBLESTONE);
+        createStairsRecipe(ModBlocks.CRIMSON_COBBLESTONE_STAIRS, Ingredient.ofItems(ModBlocks.CRIMSON_COBBLESTONE))
+                .criterion("crimson_cobblestone", FabricRecipeProvider.conditionsFromItem(ModBlocks.CRIMSON_COBBLESTONE))
+                .offerTo(exporter);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_COBBLESTONE_WALL, ModBlocks.CRIMSON_COBBLESTONE);
+        offerShapelessRecipe(exporter, ModBlocks.CRIMSON_COBBLESTONE_BUTTON, ModBlocks.CRIMSON_COBBLESTONE, null, 1);
+
+        // Ofrecer recetas de CRIMSON_STONE
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_STONE_SLAB, ModBlocks.CRIMSON_STONE);
+        offerPressurePlateRecipe(exporter, ModBlocks.CRIMSON_STONE_PRESSURE_PLATE, ModBlocks.CRIMSON_STONE);
+        createStairsRecipe(ModBlocks.CRIMSON_STONE_STAIRS, Ingredient.ofItems(ModBlocks.CRIMSON_STONE))
+                .criterion("crimson_stone", FabricRecipeProvider.conditionsFromItem(ModBlocks.CRIMSON_STONE))
+                .offerTo(exporter);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_STONE_WALL, ModBlocks.CRIMSON_STONE);
+        offerShapelessRecipe(exporter, ModBlocks.CRIMSON_STONE_BUTTON, ModBlocks.CRIMSON_STONE, null, 1);
     }
 }

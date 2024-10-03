@@ -1,8 +1,13 @@
-// 1.20.1	2024-09-12T17:09:28.9411048	UH4 1-5/Tags for minecraft:block
-902e159c5f6af7f3cdab23a454ddb6572ff5261d data\minecraft\tags\blocks\small_flowers.json
+// 1.20.1	2024-10-03T17:29:11.9428918	UH4 1-5/Tags for minecraft:block
+43ef546cbe30b56907dc6a9a75218e00303d261e data\minecraft\tags\blocks\walls.json
+b73e9fef054550363a9f819c8b30c7c7f20334ba data\minecraft\tags\blocks\lapis_ores.json
 e4e5537711da5d0335b4bb498770396aeae932e1 data\minecraft\tags\blocks\ice.json
+902e159c5f6af7f3cdab23a454ddb6572ff5261d data\minecraft\tags\blocks\small_flowers.json
+756ddeff2a40841d9805fdde587e65790d35bd52 data\minecraft\tags\blocks\coal_ores.json
+103466376c985fd4868d53bd56f55914555b229d data\minecraft\tags\blocks\iron_ores.json
 8b9d57bb3c8291def702d7499307b3a87c354d9f data\minecraft\tags\blocks\mineable\shovel.json
-53550375d74789ad6b0775d29a0cef4266d9230d data\minecraft\tags\blocks\needs_iron_tool.json
+ced30b646b4bae5a3fbaea8687f1a5c4987ba102 data\minecraft\tags\blocks\needs_iron_tool.json
 397d11ba41942e6bcb9fa4a99ee788b49ff23ff1 data\minecraft\tags\blocks\flower_pots.json
 85c66c38e036d75dd2016d1abcf1c64420631d79 data\minecraft\tags\blocks\mineable\hoe.json
-54d33621c6fef8862f7357314e8c339c921b1c15 data\minecraft\tags\blocks\mineable\pickaxe.json
+ea284f86cf793a4dc2d75029a6347f394c584131 data\minecraft\tags\blocks\needs_stone_tool.json
+8379111ca6ace3070891b4d62df5befbb02068b0 data\minecraft\tags\blocks\mineable\pickaxe.json

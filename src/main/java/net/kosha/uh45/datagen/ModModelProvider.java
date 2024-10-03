@@ -27,10 +27,46 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GLITCHTENITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORRUPTED_ICE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUGGED_DIRT);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUGGED_COBBLESTONE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUGGED_STONE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_COBBLESTONE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_STONE);
+        BlockStateModelGenerator.BlockTexturePool buggedCobblestonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BUGGED_COBBLESTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUGGED_GLITCHTENITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUGGED_IRON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUGGED_LAPIS_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUGGED_COAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_GLITCHTENITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_IRON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_LAPIS_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_COAL_ORE);
+
+        buggedCobblestonePool.stairs(ModBlocks.BUGGED_COBBLESTONE_STAIRS);
+        buggedCobblestonePool.slab(ModBlocks.BUGGED_COBBLESTONE_SLAB);
+        buggedCobblestonePool.wall(ModBlocks.BUGGED_COBBLESTONE_WALL);
+        buggedCobblestonePool.button(ModBlocks.BUGGED_COBBLESTONE_BUTTON);
+        buggedCobblestonePool.pressurePlate(ModBlocks.BUGGED_COBBLESTONE_PRESSURE_PLATE);
+
+        BlockStateModelGenerator.BlockTexturePool buggedStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BUGGED_STONE);
+
+        buggedStonePool.stairs(ModBlocks.BUGGED_STONE_STAIRS);
+        buggedStonePool.slab(ModBlocks.BUGGED_STONE_SLAB);
+        buggedStonePool.wall(ModBlocks.BUGGED_STONE_WALL);
+        buggedStonePool.button(ModBlocks.BUGGED_STONE_BUTTON);
+        buggedStonePool.pressurePlate(ModBlocks.BUGGED_STONE_PRESSURE_PLATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonCobblestonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CRIMSON_COBBLESTONE);
+
+        crimsonCobblestonePool.stairs(ModBlocks.CRIMSON_COBBLESTONE_STAIRS);
+        crimsonCobblestonePool.slab(ModBlocks.CRIMSON_COBBLESTONE_SLAB);
+        crimsonCobblestonePool.wall(ModBlocks.CRIMSON_COBBLESTONE_WALL);
+        crimsonCobblestonePool.button(ModBlocks.CRIMSON_COBBLESTONE_BUTTON);
+        crimsonCobblestonePool.pressurePlate(ModBlocks.CRIMSON_COBBLESTONE_PRESSURE_PLATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CRIMSON_STONE);
+
+        crimsonStonePool.stairs(ModBlocks.CRIMSON_STONE_STAIRS);
+        crimsonStonePool.slab(ModBlocks.CRIMSON_STONE_SLAB);
+        crimsonStonePool.wall(ModBlocks.CRIMSON_STONE_WALL);
+        crimsonStonePool.button(ModBlocks.CRIMSON_STONE_BUTTON);
+        crimsonStonePool.pressurePlate(ModBlocks.CRIMSON_STONE_PRESSURE_PLATE);
+
 
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.HEART_FLOWER, ModBlocks.POTTED_HEART_FLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.STRANGE_BUSH, ModBlocks.POTTED_STRANGE_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED);

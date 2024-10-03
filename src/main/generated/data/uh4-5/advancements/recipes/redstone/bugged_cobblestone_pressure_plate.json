@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bugged_cobblestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uh4-5:bugged_cobblestone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "uh4-5:bugged_cobblestone_pressure_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bugged_cobblestone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "uh4-5:bugged_cobblestone_pressure_plate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

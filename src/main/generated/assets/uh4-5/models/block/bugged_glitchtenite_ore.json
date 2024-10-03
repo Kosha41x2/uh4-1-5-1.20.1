@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "uh4-5:block/bugged_glitchtenite_ore"
+  }
+}

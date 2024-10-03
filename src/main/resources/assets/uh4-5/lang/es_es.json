@@ -21,6 +21,19 @@
   "block.uh4-5.bugged_dirt": "Tierra Bugeada",
   "block.uh4-5.bugged_grass_block": "Bloque de Césped Bugeado",
 
+  "block.uh4-5.bugged_stone": "Piedra Bugueada",
+  "block.uh4-5.bugged_cobblestone": "Piedra Labrada Bugueada",
+  "block.uh4-5.crimson_stone": "Piedra Carmesí",
+  "block.uh4-5.crimson_cobblestone": "Piedra Labrada Carmesí",
+  "block.uh4-5.crimson_coal_ore": "Mineral de Carbón Carmesí",
+  "block.uh4-5.crimson_lapis_ore": "Mineral de Lapislázuli Carmesí",
+  "block.uh4-5.crimson_iron_ore": "Mineral de Hierro Carmesí",
+  "block.uh4-5.crimson_glitchtenite_ore": "Mineral de Glitchtenita Carmesí",
+  "block.uh4-5.bugged_coal_ore": "Mineral de Carbón Bugueado",
+  "block.uh4-5.bugged_lapis_ore": "Mineral de Lapislázuli Bugueado",
+  "block.uh4-5.bugged_iron_ore": "Mineral de Hierro Bugueado",
+  "block.uh4-5.bugged_glitchtenite_ore": "Mineral de Glitchtenita Bugueado",
+
   "block.uh4-5.heart_flower": "Flor Corazón",
   "block.uh4-5.strange_bush": "Arbusto estraño",
 

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "uh4-5:crimson_stone"
+    }
+  ],
+  "result": {
+    "item": "uh4-5:crimson_stone_button"
+  }
+}
