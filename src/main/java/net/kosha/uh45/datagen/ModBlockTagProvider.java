@@ -79,5 +79,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CRIMSON_COBBLESTONE_WALL)
                 .add(ModBlocks.CRIMSON_STONE_WALL);
 
+        getOrCreateTagBuilder(BlockTags.DIRT)
+                .add(ModBlocks.BUGGED_DIRT)
+                .add(ModBlocks.BUGGED_GRASS_BLOCK);
+
     }
 }
