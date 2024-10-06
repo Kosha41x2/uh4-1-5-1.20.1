@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-03T17:29:11.9448866	UH4 1-5/Model Definitions
+// 1.20.1	2024-10-03T17:38:09.2990086	UH4 1-5/Model Definitions
 7adb752e4eb4bc8f228295bcbba7500d39739f95 assets\uh4-5\models\item\glitchtenite_helmet_gold_trim.json
 c39c7b702d8f778731d97fdbf9d85fea341d06e5 assets\uh4-5\models\item\glitchtenite_boots_quartz_trim.json
 c7ba301ddc45d60bf076eb192ce82dc25587aeaa assets\uh4-5\models\item\bugged_coal_ore.json
@@ -7,8 +7,8 @@ a8a249b92d1f94e42fd418c4823ce95736d45eac assets\uh4-5\models\block\crimson_cobbl
 89e0ebb91d8a7d72bb129a2689cba846aaa192f5 assets\uh4-5\models\item\crimson_stone_stairs.json
 367dfdd5f8243020830dc327f1da4120a58046ba assets\uh4-5\models\item\glitchtenite_boots_lapis_trim.json
 2a259ec0a101aee1b9f202c54320da4c68dfa484 assets\uh4-5\blockstates\bugged_cobblestone_slab.json
-3da1bd2dfc2d895b5267ce6ddb42962a10b96db7 assets\uh4-5\blockstates\bugged_stone_stairs.json
 0f4e44cfd771b47270665ca267d62a6ea9809a43 assets\uh4-5\models\block\crimson_stone_wall_inventory.json
+3da1bd2dfc2d895b5267ce6ddb42962a10b96db7 assets\uh4-5\blockstates\bugged_stone_stairs.json
 bc7922fb15bcc89b9e6a400212a62f115ef75316 assets\uh4-5\models\block\bugged_coal_ore.json
 cb5e406241776ccd18499698121ba3db38b16cdd assets\uh4-5\models\item\glitchtenite_block.json
 1de8e560ca569c7a62022363149ae82a9b0854ca assets\uh4-5\models\block\crimson_cobblestone_pressure_plate_down.json
@@ -109,8 +109,8 @@ d6d53b6c62f44a82817d9cb4cac96a25e04796a1 assets\uh4-5\models\block\crimson_cobbl
 ad199598d908dac2699cf347f980342880fa339c assets\uh4-5\models\block\crimson_stone_slab.json
 215fe5dc49d7849a1030963e49155c2cda8a9409 assets\uh4-5\models\block\bugged_stone_wall_post.json
 5a267eaa4e5f28e79aae3f909c7b4fb34136c724 assets\uh4-5\models\item\glitchtenite_chestplate_diamond_trim.json
-b54f14ee6eea976fa0d6204d7ede71200c6b8096 assets\uh4-5\models\item\raw_glitchtenite_block.json
 72b0aeb4d7251db308cc683e68319536451ca0e4 assets\uh4-5\blockstates\crimson_lapis_ore.json
+b54f14ee6eea976fa0d6204d7ede71200c6b8096 assets\uh4-5\models\item\raw_glitchtenite_block.json
 0a5e8ae5c8a619435d3897b9f84b6229f2e229b1 assets\uh4-5\models\block\bugged_cobblestone_wall_side_tall.json
 566ab47f13589c031ff0d7d0ad6d5e5d7b620e8b assets\uh4-5\models\block\potted_heart_flower.json
 4c73cbf6ec5b4006a5e9cede69f7ff337e293f48 assets\uh4-5\models\item\glitchtenite_chestplate_amethyst_trim.json

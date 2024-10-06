@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-03T17:29:11.9369077	UH4 1-5/Block Loot Tables
+// 1.20.1	2024-10-03T17:38:09.2960158	UH4 1-5/Block Loot Tables
 f86c5844d3087f9de269277ab1c9e974cb172d85 data\uh4-5\loot_tables\blocks\crimson_stone_slab.json
 0ecfdc9978923b6deeaf6b29f888d9e207897242 data\uh4-5\loot_tables\blocks\bugged_stone_button.json
 ff8629b33c6a2d883054060d48fb45b842075813 data\uh4-5\loot_tables\blocks\bugged_cobblestone_button.json
@@ -14,8 +14,8 @@ cf4ef8388c14708f7e63e3db94367a15df731913 data\uh4-5\loot_tables\blocks\bugged_st
 e5a00d432a2a8ed4eb165bc88aed4601563db85a data\uh4-5\loot_tables\blocks\bugged_glitchtenite_ore.json
 a24591f09cbf5448788a51346f43db1cceeac238 data\uh4-5\loot_tables\blocks\potted_heart_flower.json
 711d9e3f300d90d0848cb2fa70b2cf48354d0c94 data\uh4-5\loot_tables\blocks\bugged_cobblestone.json
-3a0b4beaf8387bfcf7145a6d48b3a34831700e9d data\uh4-5\loot_tables\blocks\crimson_stone_pressure_plate.json
 01076d9c029be6e5c4975d89c22f22f915e7c704 data\uh4-5\loot_tables\blocks\crimson_stone_button.json
+3a0b4beaf8387bfcf7145a6d48b3a34831700e9d data\uh4-5\loot_tables\blocks\crimson_stone_pressure_plate.json
 ae188ddde8920713d626dfb0ab41c71a59688004 data\uh4-5\loot_tables\blocks\potted_strange_bush.json
 3db34ec0ffa59c90ef6a30a030a7d5ac209eba15 data\uh4-5\loot_tables\blocks\glitchtenite_block.json
 e4808a06585d615d1be2ff4329ab25437e478fac data\uh4-5\loot_tables\blocks\raw_glitchtenite_block.json
@@ -26,8 +26,8 @@ ed1bca1e9a704965fad89c6428d75506ab8030c2 data\uh4-5\loot_tables\blocks\bugged_ir
 94c435ea2e4cb4ca3fca42ecb98bee1c289bc93e data\uh4-5\loot_tables\blocks\crimson_iron_ore.json
 e588001162d908379c8ec27bfd8737e56d9b30cd data\uh4-5\loot_tables\blocks\bugged_cobblestone_pressure_plate.json
 412feaca65ae22025cdeb555dd585b77e95f7a15 data\uh4-5\loot_tables\blocks\crimson_coal_ore.json
-1d6aa2ee6ef5459b7ae847edc9c462107e894454 data\uh4-5\loot_tables\blocks\crimson_cobblestone_button.json
 91579cded6a63e9e0bc21bf4baea23413ebfb4bb data\uh4-5\loot_tables\blocks\crimson_cobblestone_pressure_plate.json
+1d6aa2ee6ef5459b7ae847edc9c462107e894454 data\uh4-5\loot_tables\blocks\crimson_cobblestone_button.json
 9e3fd9728f0dd4429b5ae711ed66d0ff7f762c84 data\uh4-5\loot_tables\blocks\bugged_dirt.json
 5da3b54ea3da547b34b5baaa6190fdefe3db5fb9 data\uh4-5\loot_tables\blocks\crimson_cobblestone.json
 fe9ffa4c1c93f15134dbcf43c735dc90ca375956 data\uh4-5\loot_tables\blocks\bugged_coal_ore.json
