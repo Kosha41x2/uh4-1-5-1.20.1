@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.kosha.uh45.block.ModBlocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -47,6 +48,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CORRUPTED_ICE);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.DEAD_LEAVES)
                 .add(ModBlocks.CORRUPTION_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
@@ -79,9 +81,21 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CRIMSON_COBBLESTONE_WALL)
                 .add(ModBlocks.CRIMSON_STONE_WALL);
 
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.DEAD_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.DEAD_FENCE_GATE);
+
         getOrCreateTagBuilder(BlockTags.DIRT)
                 .add(ModBlocks.BUGGED_DIRT)
                 .add(ModBlocks.BUGGED_GRASS_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DEAD_LOG)
+                .add(ModBlocks.STRIPPED_DEAD_LOG)
+                .add(ModBlocks.DEAD_WOOD)
+                .add(ModBlocks.STRIPPED_DEAD_WOOD);
 
     }
 }

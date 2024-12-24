@@ -2,6 +2,7 @@ package net.kosha.uh45.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.kosha.uh45.UH415;
+import net.kosha.uh45.block.ModBlocks;
 import net.kosha.uh45.entity.ModEntities;
 import net.kosha.uh45.item.custom.GlitchedCrossbowItem;
 import net.kosha.uh45.item.custom.GlitchteniteArmor;
@@ -14,6 +15,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
+    public static final Item DEAD_SIGN = registerItem("dead_sign", new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_DEAD_SIGN, ModBlocks.WALL_DEAD_SIGN));
+    public static final Item DEAD_HANGING_SIGN = registerItem("dead_hanging_sign", new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.HANGING_DEAD_SIGN, ModBlocks.WALL_HANGING_DEAD_SIGN));
     public static final Item RAW_GLITCHTENITE = registerItem("raw_glitchtenite", new Item(new FabricItemSettings()));
     public static final Item GLITCHTENITE_INGOT = registerItem("glitchtenite_ingot", new Item(new FabricItemSettings()));
     public static final Item GLITCHTENITE_PICKAXE = registerItem("glitchtenite_pickaxe", new PickaxeItem(ModToolMaterial.GLITCHTENITE,1, realAttackSpeed(1.2f),new FabricItemSettings()));
@@ -34,8 +37,6 @@ public class ModItems {
     public static final Item SLUG_SPAWN_EGG = registerItem("slug_spawn_egg", new SpawnEggItem(ModEntities.SLUG, 61909, 16057301,new FabricItemSettings()));
     public static final Item AMALGAM_SPAWN_EGG = registerItem("amalgam_spawn_egg", new SpawnEggItem(ModEntities.AMALGAM, 16053237, 3336933,new FabricItemSettings()));
     public static final Item GLITCHTENITE_GOLEM_SPAWN_EGG = registerItem("glitchtenite_golem_spawn_egg", new SpawnEggItem(ModEntities.GLITCHTENITE_GOLEM, 2495736, 11539683,new FabricItemSettings()));
-
-
 
 
     private static Item registerItem(String name, Item item){

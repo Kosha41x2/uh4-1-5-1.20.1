@@ -3,14 +3,16 @@ package net.kosha.uh45;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.kosha.uh45.block.FlammableBlocksRegisterer;
 import net.kosha.uh45.block.ModBlocks;
-import net.kosha.uh45.datagen.ModEntityTagProvider;
 import net.kosha.uh45.effect.ModEffects;
 import net.kosha.uh45.entity.attribute.ModEntityAttributes;
 import net.kosha.uh45.entity.ModEntities;
 import net.kosha.uh45.entity.custom.AmalgamEntity;
 import net.kosha.uh45.entity.custom.GlitchteniteGolemEntity;
 import net.kosha.uh45.entity.custom.SlugEntity;
+import net.kosha.uh45.helping_classes.FuelRegisterer;
 import net.kosha.uh45.item.ModItemGroups;
 import net.kosha.uh45.item.ModItems;
 import net.kosha.uh45.potion.ModPotions;
@@ -27,6 +29,8 @@ public class UH415 implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 
+		//registries
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModEntityAttributes.registerModEntityAttributes();
@@ -37,8 +41,18 @@ public class UH415 implements ModInitializer {
 		ModSounds.registerSounds();
 		ModEntities.registerModEntities();
 
+
+
 		FabricDefaultAttributeRegistry.register(ModEntities.SLUG, SlugEntity.createSlugAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.AMALGAM, AmalgamEntity.createAmalgamAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.GLITCHTENITE_GOLEM	, GlitchteniteGolemEntity.createGlitchteniteGolemAttributes());
+
+		StrippableBlockRegistry.register(ModBlocks.DEAD_LOG, ModBlocks.STRIPPED_DEAD_LOG);
+		StrippableBlockRegistry.register(ModBlocks.DEAD_WOOD, ModBlocks.STRIPPED_DEAD_WOOD);
+
+		FlammableBlocksRegisterer.RegisterFlammableBlocks();
+
+		FuelRegisterer.RegisterFuels();
+
 	}
 }

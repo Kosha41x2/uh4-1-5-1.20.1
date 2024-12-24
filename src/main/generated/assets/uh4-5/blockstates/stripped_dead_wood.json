@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "uh4-5:block/stripped_dead_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "uh4-5:block/stripped_dead_wood"
+    },
+    "axis=z": {
+      "model": "uh4-5:block/stripped_dead_wood",
+      "x": 90
+    }
+  }
+}

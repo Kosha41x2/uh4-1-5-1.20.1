@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.kosha.uh45.block.ModBlocks;
 import net.kosha.uh45.item.ModItems;
 import net.kosha.uh45.util.ModTags;
+import net.minecraft.block.Block;
 import net.minecraft.item.Items;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
@@ -60,5 +61,27 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CRIMSON_STONE_PRESSURE_PLATE);
         addDrop(ModBlocks.CRIMSON_STONE_WALL);
 
+        addDrop(ModBlocks.DEAD_PLANKS);
+        addDrop(ModBlocks.DEAD_LOG);
+        addDrop(ModBlocks.DEAD_WOOD);
+        addDrop(ModBlocks.STRIPPED_DEAD_LOG);
+        addDrop(ModBlocks.STRIPPED_DEAD_WOOD);
+
+        // Drops para las variantes de la madera muerta
+        addDrop(ModBlocks.DEAD_BUTTON);
+        addDrop(ModBlocks.DEAD_SLAB, slabDrops(ModBlocks.DEAD_SLAB));
+        addDrop(ModBlocks.DEAD_FENCE);
+        addDrop(ModBlocks.DEAD_FENCE_GATE);
+        addDrop(ModBlocks.DEAD_PRESSURE_PLATE);
+        addDrop(ModBlocks.DEAD_STAIRS);
+        addDrop(ModBlocks.DEAD_TRAPDOOR);
+        addDrop(ModBlocks.STANDING_DEAD_SIGN);
+        addDrop(ModBlocks.HANGING_DEAD_SIGN);
+        addDrop(ModBlocks.WALL_DEAD_SIGN);
+        addDrop(ModBlocks.WALL_HANGING_DEAD_SIGN);
+
+
+
+        addDrop(ModBlocks.DEAD_DOOR, doorDrops(ModBlocks.DEAD_DOOR));
     }
 }

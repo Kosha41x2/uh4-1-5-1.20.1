@@ -1,5 +1,9 @@
 package net.kosha.uh45.block;
 
+import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kosha.uh45.UH415;
@@ -9,12 +13,13 @@ import net.kosha.uh45.block.custom.CorruptionBlock;
 import net.kosha.uh45.effect.ModEffects;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
+import net.minecraft.data.family.BlockFamilies;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
@@ -126,6 +131,60 @@ public class ModBlocks {
 
     public static final Block GLITCHTENITE_BLOCK = registerBlock("glitchtenite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.LAPIS_BLUE)));
+
+
+    public static final Block DEAD_LOG = registerBlock("dead_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).mapColor(MapColor.GRAY)));
+    public static final Block DEAD_WOOD = registerBlock("dead_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).mapColor(MapColor.GRAY)));
+    public static final Block STRIPPED_DEAD_LOG = registerBlock("stripped_dead_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).mapColor(MapColor.GRAY)));
+    public static final Block STRIPPED_DEAD_WOOD = registerBlock("stripped_dead_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).mapColor(MapColor.GRAY)));
+
+    public static final Block DEAD_PLANKS = registerBlock("dead_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.GRAY)));
+
+    public static final Block DEAD_STAIRS = registerBlock("dead_stairs",
+            new StairsBlock(ModBlocks.DEAD_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DEAD_PLANKS)));
+    public static final Block DEAD_SLAB = registerBlock("dead_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DEAD_PLANKS)));
+
+    public static final Block DEAD_BUTTON = registerBlock("dead_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(ModBlocks.DEAD_PLANKS), BlockSetType.MANGROVE, 10, true));
+    public static final Block DEAD_PRESSURE_PLATE = registerBlock("dead_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,FabricBlockSettings.copyOf(ModBlocks.DEAD_PLANKS), BlockSetType.MANGROVE));
+    public static final Block DEAD_FENCE = registerBlock("dead_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(ModBlocks.DEAD_PLANKS)));
+    public static final Block DEAD_FENCE_GATE = registerBlock("dead_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(ModBlocks.DEAD_PLANKS), WoodType.MANGROVE));
+    public static final Block DEAD_DOOR = registerBlock("dead_door",
+            new DoorBlock(FabricBlockSettings.copyOf(ModBlocks.DEAD_PLANKS).nonOpaque(), BlockSetType.MANGROVE));
+    public static final Block DEAD_TRAPDOOR = registerBlock("dead_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(ModBlocks.DEAD_PLANKS).nonOpaque(), BlockSetType.MANGROVE));
+
+    public static final Identifier DEAD_SING_TEXTURE = new Identifier(UH415.MOD_ID, "entity/signs/dead");
+    public static final Identifier DEAD_HANGING_SING_TEXTURE = new Identifier(UH415.MOD_ID, "entity/signs/hanging/dead");
+    public static final Identifier DEAD_HANGING_GUI_SING_TEXTURE = new Identifier(UH415.MOD_ID, "textures/gui/hanging_signs/dead");
+
+    public static final Block STANDING_DEAD_SIGN = Registry.register(Registries.BLOCK, new Identifier(UH415.MOD_ID, "dead_standing_sign"),
+            new TerraformSignBlock(DEAD_SING_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block WALL_DEAD_SIGN = Registry.register(Registries.BLOCK, new Identifier(UH415.MOD_ID, "dead_wall_sign"),
+            new TerraformWallSignBlock(DEAD_SING_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block HANGING_DEAD_SIGN = Registry.register(Registries.BLOCK, new Identifier(UH415.MOD_ID, "dead_hanging_sign"),
+            new TerraformHangingSignBlock(DEAD_HANGING_SING_TEXTURE, DEAD_HANGING_GUI_SING_TEXTURE , FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_DEAD_SIGN = Registry.register(Registries.BLOCK, new Identifier(UH415.MOD_ID, "dead_wall_hanging_sign"),
+            new TerraformWallHangingSignBlock(DEAD_HANGING_SING_TEXTURE, DEAD_HANGING_GUI_SING_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+
+    public static final BlockFamily DEAD_FAMILY = BlockFamilies.register(ModBlocks.DEAD_PLANKS)
+            .sign(ModBlocks.STANDING_DEAD_SIGN, ModBlocks.WALL_DEAD_SIGN)
+            .group("wooden").unlockCriterionName("has_planks").build();
+
+
+    public static final Block DEAD_LEAVES = registerBlock("dead_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).mapColor(MapColor.PINK).nonOpaque()));
+
+
 
     public static final Block CORRUPTION_BLOCK = registerBlock("corruption_block",
             new CorruptionBlock(FabricBlockSettings.copyOf(Blocks.WARPED_WART_BLOCK).mapColor(MapColor.BLACK).strength(3.5f)

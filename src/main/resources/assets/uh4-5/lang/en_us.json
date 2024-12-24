@@ -54,6 +54,29 @@
   "block.uh4-5.bugged_iron_ore": "Bugged Iron Ore",
   "block.uh4-5.bugged_glitchtenite_ore": "Bugged Glitchtenite Ore",
 
+  "block.uh4-5.dead_log": "Dead Log",
+  "block.uh4-5.dead_wood": "Dead Wood",
+  "block.uh4-5.stripped_dead_log": "Stripped Dead Log",
+  "block.uh4-5.stripped_dead_wood": "Stripped Dead Wood",
+  "block.uh4-5.dead_planks": "Dead Planks",
+  "block.mod.dead_standing_sign": "Dead Standing Sign",
+  "block.mod.dead_wall_sign": "Dead Wall Sign",
+  "block.mod.dead_hanging_sign": "Dead Hanging Sign",
+  "block.mod.dead_wall_hanging_sign": "Dead Wall Hanging Sign",
+  "item.mod.dead_sign": "Dead Sign",
+  "item.mod.dead_hanging_sign": "Dead Hanging Sign",
+
+
+  "block.uh4-5.dead_stairs": "Dead Stairs",
+  "block.uh4-5.dead_slab": "Dead Slab",
+  "block.uh4-5.dead_button": "Dead Button",
+  "block.uh4-5.dead_pressure_plate": "Dead Pressure Plate",
+  "block.uh4-5.dead_fence": "Dead Fence",
+  "block.uh4-5.dead_fence_gate": "Dead Fence Gate",
+  "block.uh4-5.dead_door": "Dead Door",
+  "block.uh4-5.dead_trapdoor": "Dead Trapdoor",
+
+  "block.uh4-5.dead_leaves": "Dead Leaves",
 
   "block.uh4-5.heart_flower": "Heart Flower",
   "block.uh4-5.strange_bush": "Strange Bush",

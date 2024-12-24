@@ -67,6 +67,27 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
                         entries.add(ModBlocks.GLITCHTENITE_BLOCK);
+
+                        entries.add(ModBlocks.DEAD_WOOD);
+                        entries.add(ModBlocks.DEAD_LOG);
+                        entries.add(ModBlocks.STRIPPED_DEAD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_DEAD_LOG);
+                        entries.add(ModBlocks.DEAD_PLANKS);
+
+                        entries.add(ModBlocks.DEAD_SLAB);
+                        entries.add(ModBlocks.DEAD_STAIRS);
+                        entries.add(ModBlocks.DEAD_BUTTON);
+                        entries.add(ModBlocks.DEAD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.DEAD_FENCE);
+                        entries.add(ModBlocks.DEAD_FENCE_GATE);
+                        entries.add(ModBlocks.DEAD_DOOR);
+                        entries.add(ModBlocks.DEAD_TRAPDOOR);
+                        entries.add(ModItems.DEAD_SIGN);
+                        entries.add(ModItems.DEAD_HANGING_SIGN);
+
+
+                        entries.add(ModBlocks.DEAD_LEAVES);
+
                         entries.add(ModBlocks.CORRUPTION_BLOCK);
                         entries.add(ModBlocks.CORRUPTED_ICE);
 
@@ -109,6 +130,9 @@ public class ModItemGroups {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItemGroups::addItemsToTabFoodAndDrink);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItemGroups::addItemsToTabNatural);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(ModItemGroups::addItemsToTabSpawnEggs);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(ModItemGroups::addItemsToTabRedstone);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModItemGroups::addItemsToTabFunctional);
+
 
 
     }
@@ -152,6 +176,7 @@ public class ModItemGroups {
         entries.add(ModBlocks.CRIMSON_COBBLESTONE_PRESSURE_PLATE);
 
 
+
         entries.add(ModBlocks.BUGGED_COAL_ORE);
         entries.add(ModBlocks.BUGGED_IRON_ORE);
         entries.add(ModBlocks.BUGGED_LAPIS_ORE);
@@ -163,6 +188,26 @@ public class ModItemGroups {
 
         entries.add(ModBlocks.RAW_GLITCHTENITE_BLOCK);
         entries.add(ModBlocks.GLITCHTENITE_BLOCK);
+
+        entries.add(ModBlocks.DEAD_WOOD);
+        entries.add(ModBlocks.DEAD_LOG);
+        entries.add(ModBlocks.STRIPPED_DEAD_WOOD);
+        entries.add(ModBlocks.STRIPPED_DEAD_LOG);
+        entries.add(ModBlocks.DEAD_PLANKS);
+
+        entries.add(ModBlocks.DEAD_SLAB);
+        entries.add(ModBlocks.DEAD_STAIRS);
+        entries.add(ModBlocks.DEAD_BUTTON);
+        entries.add(ModBlocks.DEAD_PRESSURE_PLATE);
+        entries.add(ModBlocks.DEAD_FENCE);
+        entries.add(ModBlocks.DEAD_FENCE_GATE);
+        entries.add(ModBlocks.DEAD_DOOR);
+        entries.add(ModBlocks.DEAD_TRAPDOOR);
+
+
+        entries.add(ModBlocks.DEAD_LEAVES);
+
+
         entries.add(ModBlocks.CORRUPTION_BLOCK);
         entries.add(ModBlocks.CORRUPTED_ICE);
     }
@@ -170,6 +215,16 @@ public class ModItemGroups {
     private static void addItemsToTabIngredients(FabricItemGroupEntries entries){
         entries.add(ModItems.RAW_GLITCHTENITE);
         entries.add(ModItems.GLITCHTENITE_INGOT);
+    }
+
+    private static void addItemsToTabFunctional(FabricItemGroupEntries entries){
+        entries.add(ModItems.DEAD_SIGN);
+        entries.add(ModItems.DEAD_HANGING_SIGN);
+    }
+
+    private static void addItemsToTabRedstone(FabricItemGroupEntries entries){
+        entries.add(ModBlocks.DEAD_DOOR);
+        entries.add(ModBlocks.DEAD_TRAPDOOR);
     }
 
     private static void addItemsToTabCombat(FabricItemGroupEntries entries){

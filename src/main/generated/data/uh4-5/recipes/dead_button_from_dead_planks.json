@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "uh4-5:dead_planks"
+    }
+  ],
+  "result": {
+    "item": "uh4-5:dead_button"
+  }
+}

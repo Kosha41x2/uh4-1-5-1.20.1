@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left_open",
+  "textures": {
+    "bottom": "uh4-5:block/dead_door_bottom",
+    "top": "uh4-5:block/dead_door_top"
+  }
+}

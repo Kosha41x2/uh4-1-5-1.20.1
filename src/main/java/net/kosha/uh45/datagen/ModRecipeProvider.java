@@ -15,6 +15,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.TagKey;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -29,7 +30,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> TO_GET_RAW_IRON = List.of(ModBlocks.CRIMSON_IRON_ORE, ModBlocks.BUGGED_IRON_ORE);
     private static final List<ItemConvertible> TO_GET_COAL = List.of(ModBlocks.CRIMSON_COAL_ORE, ModBlocks.BUGGED_COAL_ORE);
     private static final List<ItemConvertible> TO_GET_LAPIS = List.of(ModBlocks.CRIMSON_LAPIS_ORE, ModBlocks.BUGGED_LAPIS_ORE);
-
+    private static final List<ItemConvertible> TO_GET_CHARCOAL = List.of(ModBlocks.STRIPPED_DEAD_WOOD, ModBlocks.DEAD_LOG,  ModBlocks.DEAD_WOOD,  ModBlocks.STRIPPED_DEAD_LOG);
 
 
 
@@ -47,15 +48,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(exporter, TO_GET_RAW_IRON, RecipeCategory.MISC, Items.RAW_IRON, 0.7f, 200, "ores");
         offerSmelting(exporter, TO_GET_COAL, RecipeCategory.MISC, Items.COAL, 0.7f, 200, "ores");
         offerSmelting(exporter, TO_GET_LAPIS, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.7f, 200, "ores");
+        offerSmelting(exporter, TO_GET_CHARCOAL, RecipeCategory.MISC, Items.CHARCOAL, 0.7f, 200, "charcoal");
 
         offerBlasting(exporter, TO_GET_RAW_GLITCHTENITE, RecipeCategory.MISC, ModItems.RAW_GLITCHTENITE, 1.4f, 100, "ores");
         offerBlasting(exporter, TO_GET_RAW_IRON, RecipeCategory.MISC, Items.RAW_IRON, 0.7f, 100, "ores");
         offerBlasting(exporter, TO_GET_COAL, RecipeCategory.MISC, Items.COAL, 0.7f, 100, "ores");
         offerBlasting(exporter, TO_GET_LAPIS, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.7f, 100, "ores");
-
-
-
         offerBlasting(exporter, TO_GET_GLITHCTENITE_INGOT, RecipeCategory.MISC, ModItems.GLITCHTENITE_INGOT, 0.7f, 100, "glitchtenite");
+
+
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.GLITCHTENITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.GLITCHTENITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_GLITCHTENITE, RecipeCategory.DECORATIONS, ModBlocks.RAW_GLITCHTENITE_BLOCK);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS ,ModItems.GLITCHTENITE_PICKAXE)
@@ -155,5 +156,42 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_STONE_WALL, ModBlocks.CRIMSON_STONE);
         offerShapelessRecipe(exporter, ModBlocks.CRIMSON_STONE_BUTTON, ModBlocks.CRIMSON_STONE, null, 1);
+
+        offerPlanksRecipe(exporter, ModBlocks.DEAD_PLANKS.asItem(), ModItemTagProvider.DEAD_LOGS, 4);
+
+        offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEAD_WOOD, ModBlocks.DEAD_LOG);
+        offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_DEAD_WOOD, ModBlocks.STRIPPED_DEAD_LOG);
+
+        // Ofrecer recetas de DEAD_PLANKS
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEAD_SLAB, ModBlocks.DEAD_PLANKS);
+        offerPressurePlateRecipe(exporter, ModBlocks.DEAD_PRESSURE_PLATE, ModBlocks.DEAD_PLANKS);
+        createStairsRecipe(ModBlocks.DEAD_STAIRS, Ingredient.ofItems(ModBlocks.DEAD_PLANKS))
+                .criterion("dead_planks", FabricRecipeProvider.conditionsFromItem(ModBlocks.DEAD_PLANKS))
+                .offerTo(exporter);
+        offerShapelessRecipe(exporter, ModBlocks.DEAD_BUTTON, ModBlocks.DEAD_PLANKS, null, 1);
+
+        createFenceRecipe(ModBlocks.DEAD_FENCE, Ingredient.ofItems(ModBlocks.DEAD_PLANKS))
+                .criterion("dead_planks", FabricRecipeProvider.conditionsFromItem(ModBlocks.DEAD_PLANKS))
+                .offerTo(exporter);
+        createFenceGateRecipe(ModBlocks.DEAD_FENCE_GATE, Ingredient.ofItems(ModBlocks.DEAD_PLANKS))
+                .criterion("dead_planks", FabricRecipeProvider.conditionsFromItem(ModBlocks.DEAD_PLANKS))
+                .offerTo(exporter);
+        createDoorRecipe(ModBlocks.DEAD_DOOR, Ingredient.ofItems(ModBlocks.DEAD_PLANKS))
+                .criterion("dead_planks", FabricRecipeProvider.conditionsFromItem(ModBlocks.DEAD_PLANKS))
+                .offerTo(exporter);
+        createTrapdoorRecipe(ModBlocks.DEAD_TRAPDOOR, Ingredient.ofItems(ModBlocks.DEAD_PLANKS))
+                .criterion("dead_planks", FabricRecipeProvider.conditionsFromItem(ModBlocks.DEAD_PLANKS))
+                .offerTo(exporter);
+        createSignRecipe(ModItems.DEAD_SIGN, Ingredient.ofItems(ModBlocks.DEAD_PLANKS))
+                .criterion("dead_planks", FabricRecipeProvider.conditionsFromItem(ModBlocks.DEAD_PLANKS))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS ,ModItems.DEAD_HANGING_SIGN)
+                .pattern("/ /")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModBlocks.STRIPPED_DEAD_LOG)
+                .input('/', Items.CHAIN)
+                .criterion(hasItem(ModBlocks.DEAD_LOG), conditionsFromItem(ModBlocks.DEAD_LOG))
+                .offerTo(exporter);
     }
 }

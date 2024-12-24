@@ -67,6 +67,24 @@ public class ModModelProvider extends FabricModelProvider {
         crimsonStonePool.button(ModBlocks.CRIMSON_STONE_BUTTON);
         crimsonStonePool.pressurePlate(ModBlocks.CRIMSON_STONE_PRESSURE_PLATE);
 
+        blockStateModelGenerator.registerLog(ModBlocks.DEAD_LOG).log(ModBlocks.DEAD_LOG).wood(ModBlocks.DEAD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_DEAD_LOG).log(ModBlocks.STRIPPED_DEAD_LOG).wood(ModBlocks.STRIPPED_DEAD_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEAD_LEAVES);
+
+        BlockStateModelGenerator.BlockTexturePool deadPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEAD_PLANKS);
+
+        deadPool.stairs(ModBlocks.DEAD_STAIRS);
+        deadPool.slab(ModBlocks.DEAD_SLAB);
+        deadPool.pressurePlate(ModBlocks.DEAD_PRESSURE_PLATE);
+        deadPool.button(ModBlocks.DEAD_BUTTON);
+        deadPool.fence(ModBlocks.DEAD_FENCE);
+        deadPool.fenceGate(ModBlocks.DEAD_FENCE_GATE);
+
+        deadPool.family(ModBlocks.DEAD_FAMILY);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.DEAD_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.DEAD_TRAPDOOR);
+
 
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.HEART_FLOWER, ModBlocks.POTTED_HEART_FLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.STRANGE_BUSH, ModBlocks.POTTED_STRANGE_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -74,6 +92,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.DEAD_HANGING_SIGN, Models.GENERATED);
         itemModelGenerator.register(ModItems.GLITCHTENITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_GLITCHTENITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GLITCHTENITE_AXE, Models.HANDHELD);

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "uh4-5:dead_leaves",
     "uh4-5:corruption_block"
   ]
 }

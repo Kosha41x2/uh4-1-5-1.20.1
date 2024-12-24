@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "uh4-5:dead_log",
+    "uh4-5:stripped_dead_log",
+    "uh4-5:dead_wood",
+    "uh4-5:stripped_dead_wood"
+  ]
+}
